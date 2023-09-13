@@ -1,0 +1,67 @@
+2023-09-12 12:05:17 - [32minfo[39m - [32mteste[39m
+2023-09-12 12:08:20 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-12 12:08:35 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-12 12:12:13 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-12 12:49:19 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-12 14:50:11 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-12 14:50:11 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-12 14:51:28 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-12 14:51:28 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-12 14:52:13 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-12 14:52:13 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-12 14:54:10 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-12 14:54:10 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-12 15:14:40 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-12 15:14:40 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-12 15:15:36 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-12 15:15:36 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-12 15:16:29 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-12 15:16:29 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-12 15:18:44 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-12 15:18:44 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-12 15:21:21 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-12 15:21:21 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-12 15:22:39 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-12 15:22:39 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-12 15:27:42 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-12 15:27:42 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-12 15:28:28 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-12 15:28:28 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-12 15:30:19 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-12 15:30:19 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-12 15:31:02 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-12 15:31:02 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-12 15:35:58 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-12 15:35:58 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-12 15:38:27 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-12 15:38:27 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-12 15:40:09 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-12 15:40:09 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-12 15:41:13 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-12 15:41:13 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-12 15:41:15 - [31merror[39m - [31mErro ao inserir registro no banco de dados: Column 'nome' cannot be null[39m
+2023-09-12 15:43:53 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-12 15:43:53 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-12 15:43:56 - [32minfo[39m - [32mRegistro inserido com sucesso. ID:[39m
+2023-09-12 16:13:09 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-12 16:13:09 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-12 16:21:19 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-12 16:21:19 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-12 16:21:56 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-12 16:21:56 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-12 16:22:18 - [31merror[39m - [31mErro ao atualizar usuário![39m
+2023-09-12 16:24:21 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-12 16:24:21 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-12 16:24:24 - [31merror[39m - [31mErro ao atualizar usuário![39m
+2023-09-12 16:25:12 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-12 16:25:12 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-12 16:25:14 - [31merror[39m - [31mErro ao atualizar usuário![39m
+2023-09-12 16:26:35 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-12 16:26:35 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-12 16:26:44 - [31merror[39m - [31mErro ao atualizar usuário![39m
+2023-09-12 16:27:13 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-12 16:27:13 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-12 16:27:15 - [31merror[39m - [31mErro ao atualizar usuário![39m
+2023-09-12 16:30:36 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-12 16:30:36 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-12 16:30:39 - [32minfo[39m - [32mUsuário Atualizado com sucesso![39m
