@@ -1,6 +1,12 @@
+require('dotenv').config();
+
+// Dependencias
+const NodeCache = require("node-cache")
 const mysql = require('mysql2');
 const logger = require('../controlers/winston');
-require('dotenv').config();
+
+//Configs
+const cache = new NodeCache
 
 const connection = mysql.createConnection({
   host: 'localhost',
@@ -24,7 +30,7 @@ const sqlInsertTarefa = 'INSERT INTO tarefas (dia_semana, descricao_tarefa, cond
 const sqlUpdateTarefa = 'UPDATE tarefas SET descricao_tarefa = ?, concluido = ?, justificativa = ? WHERE id_tarefa = ?';
 const sqlDeleteTarefa = 'DELETE FROM tarefas WHERE id_tarefa = ?';
 
-
+// Controlador
 const tarefasController = {
     consultarTarefas: function (req, res) {
         id = req.params.id

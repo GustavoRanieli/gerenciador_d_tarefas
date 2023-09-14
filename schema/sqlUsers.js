@@ -1,7 +1,13 @@
-const mysql = require('mysql2');
-const logger = require('../controlers/winston');
 require('dotenv').config()
 
+// Dependencias
+const NodeCache = require("node-cache")
+const mysql = require('mysql2');
+const logger = require('../controlers/winston');
+
+//Configs
+const { error } = require('winston');
+const cache = new NodeCache
 
 const connection = mysql.createConnection({
   host: 'localhost',
@@ -19,11 +25,13 @@ connection.connect(( err ) => {
   logger.info('Conectado com sucesso ao banco');
 });
 
+
 // Funções
-const sqlQuery = 'SELECT * FROM usuario';
+let sqlSelect = `SELECT * FROM usuario WHERE `;
 const sqlInsert = 'INSERT INTO usuario (id, nome, senha, funcao, cpf, idade) VALUES (?, ?, ?, ?, ?, ?)';
 const sqlUpdate = 'UPDATE usuario SET nome = ?, senha = ?, funcao = ?, cpf = ?, idade = ? WHERE ID = (?)';
 const sqlDelete = 'DELETE FROM usuario WHERE ID = (?)';
+const sqlSelectLogin =  'SELECT * FROM usuario WHERE cpf = ? AND senha = ?'
 
 const sqlControlerUser = {
     addUser : function( req, res) {
@@ -48,13 +56,21 @@ const sqlControlerUser = {
     },
 
     consultaBanco: function ( req, res ) {
-      connection.query(sqlQuery, (err, results) => {
+      console.log(req.body)
+      let conditions
+      let coluna = req.body.tabela //Qual tabela procurar
+      let value = req.body.valor // Valor
+
+      // Deixando a consulta dinâmica
+      conditions = `${coluna} = (?)` // Completando o WHERE
+
+      connection.query(sqlSelect + conditions, [value], (err, results) => {
         if (err) {
           logger.error('Erro ao executar a consulta SQL:', err);
           return;
         }
         res.json(results)
-        console.log('Resultados da consulta:', results);
+        console.log( 'Consultado com sucesso!' );
       });
       // Implementação para Consultar...
     },
@@ -95,7 +111,45 @@ const sqlControlerUser = {
           }
       })
       // Implementação para Deletar...
+    },
+
+  /**
+   * 
+   * @param {*} req 
+   * @param {*} res 
+   * 
+   * Função que efetua a verificação das credenciais de acesso do usuário
+   */
+  loginUsuario: function (req, res) {
+    const { senha, cpf } = req.body;
+
+    try {
+      connection.query(sqlSelectLogin, [cpf, senha], (err, result) => {
+        if (err) {
+          console.error('Erro ao Procurar os usuários:', err);
+          return res.status(500).send('Erro ao Procurar os usuários');
+        }
+
+        if (result.length === 0) {
+          return res.status(401).send('Credenciais inválidas');
+        }
+
+        const usuario = result[0];
+        switch (usuario.funcao) {
+          case 'user':
+            
+            return res.render('usuario');
+          case 'admin':
+            return res.render('admin');
+          default:
+            return res.status(401).send('Função de usuário desconhecida');
+        }
+      });
+    } catch (err) {
+      console.error('Erro inesperado:', err);
+      res.status(500).send('Erro inesperado');
     }
+  }
 }
 
 module.exports = sqlControlerUser
