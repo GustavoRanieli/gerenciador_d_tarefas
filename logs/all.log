@@ -65,3 +65,21 @@
 2023-09-12 16:30:36 - [32minfo[39m - [32mServidor Aberto[39m
 2023-09-12 16:30:36 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
 2023-09-12 16:30:39 - [32minfo[39m - [32mUsuário Atualizado com sucesso![39m
+2023-09-13 21:25:15 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-13 21:25:15 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-13 21:25:15 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-13 21:39:06 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-13 21:39:06 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-13 21:39:06 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-13 21:39:21 - [31merror[39m - [31mErro ao inserir registro no banco de dados: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?)' at line 1[39m
+2023-09-13 21:39:55 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-13 21:39:56 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-13 21:39:56 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-13 21:39:58 - [31merror[39m - [31mErro ao inserir registro no banco de dados: Column 'descricao_tarefa' cannot be null[39m
+2023-09-13 21:40:25 - [31merror[39m - [31mErro ao inserir registro no banco de dados: Column 'descricao_tarefa' cannot be null[39m
+2023-09-13 21:40:38 - [31merror[39m - [31mErro ao inserir registro no banco de dados: Column 'descricao_tarefa' cannot be null[39m
+2023-09-13 21:41:27 - [32minfo[39m - [32mRegistro inserido com sucesso. ID:[39m
+2023-09-13 21:43:43 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-13 21:43:43 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-13 21:43:43 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-13 21:44:00 - [32minfo[39m - [32mUsuário deletado com sucesso![39m

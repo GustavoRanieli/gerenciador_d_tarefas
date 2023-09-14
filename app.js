@@ -7,7 +7,8 @@ const porta = 3000;
 
 // Depêndencias
 const logger = require('./controlers/winston');
-const userRouter = require('./routers/user')
+const userRouterUser = require('./routers/user')
+const userRouterTarefas = require('./routers/tarefas')
 const bodyParser = require('body-parser');
 
 // Setando Configs
@@ -25,8 +26,8 @@ app.get('/', ( req, res ) => {
     res.send('Servidor Ok')
 })
 
-app.use('/', userRouter)
-
+app.use('/', userRouterUser)
+app.use('/', userRouterTarefas)
 
 app.listen(porta, (err) => {
     if(err){

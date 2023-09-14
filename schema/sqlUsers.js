@@ -10,6 +10,7 @@ const connection = mysql.createConnection({
   database: process.env.DATA_BASE,
   waitForConnections: true,
 });
+
 connection.connect(( err ) => {
   if( err ) {
       logger.error(`Erro ao se conectar com o banco, ${err}`);
@@ -25,7 +26,6 @@ const sqlUpdate = 'UPDATE usuario SET nome = ?, senha = ?, funcao = ?, cpf = ?, 
 const sqlDelete = 'DELETE FROM usuario WHERE ID = (?)';
 
 const sqlControlerUser = {
-//Adicionar
     addUser : function( req, res) {
         let usuario = {
             nome: req.body.nome,
@@ -44,8 +44,9 @@ const sqlControlerUser = {
               res.status(200).send('Usuário Cadastrado!')
             }
           });
+          // Implementação para Adicionar...
     },
-//Consultar
+
     consultaBanco: function ( req, res ) {
       connection.query(sqlQuery, (err, results) => {
         if (err) {
@@ -55,8 +56,9 @@ const sqlControlerUser = {
         res.json(results)
         console.log('Resultados da consulta:', results);
       });
+      // Implementação para Consultar...
     },
-//Editar
+
     editarUsuário: function( req, res ) {
       let ID = req.params.id
 
@@ -78,8 +80,9 @@ const sqlControlerUser = {
           res.status(200).send('Usuário Atualizado!')
         }
     })
+    // Implementação para Editar...
     },
-// Deletar
+
     deleteUsuario: function( req, res ) {
       let id = req.params.id
       connection.query(sqlDelete, [id], ( err, results ) => {
@@ -91,6 +94,7 @@ const sqlControlerUser = {
             res.status(200).send('Usuário deletado!')
           }
       })
+      // Implementação para Deletar...
     }
 }
 
