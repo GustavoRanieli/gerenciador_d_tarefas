@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 13-Set-2023 às 00:27
+-- Tempo de geração: 14-Set-2023 às 04:15
 -- Versão do servidor: 10.4.27-MariaDB
 -- versão do PHP: 8.2.0
 
@@ -24,15 +24,28 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `teste`
+-- Estrutura da tabela `tarefas`
 --
 
-CREATE TABLE `teste` (
-  `teste1` int(11) NOT NULL,
-  `teste2` int(11) NOT NULL,
-  `teste3` int(11) NOT NULL,
-  `test4` int(11) NOT NULL
+CREATE TABLE `tarefas` (
+  `id_tarefa` int(11) NOT NULL,
+  `dia_semana` enum('Segunda','Terça','Quarta','Quinta','Sexta','Sábado','Domingo') DEFAULT NULL,
+  `descricao_tarefa` varchar(900) NOT NULL,
+  `condominio` varchar(255) NOT NULL,
+  `concluido` tinyint(1) DEFAULT NULL,
+  `justificativa` varchar(255) DEFAULT NULL,
+  `id_usuario` int(11) DEFAULT NULL,
+  `dia_da_tarefa` date DEFAULT NULL,
+  `hora_da_tarefa` time DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Extraindo dados da tabela `tarefas`
+--
+
+INSERT INTO `tarefas` (`id_tarefa`, `dia_semana`, `descricao_tarefa`, `condominio`, `concluido`, `justificativa`, `id_usuario`, `dia_da_tarefa`, `hora_da_tarefa`) VALUES
+(9, 'Segunda', 'dasdasd', 'tia', 0, 'dasdasd', 9, '2023-09-13', '22:23:41'),
+(10, 'Segunda', 'dasdasd', 'tia', 0, 'dasdasd', 9, '2023-09-13', '22:23:41');
 
 -- --------------------------------------------------------
 
@@ -62,6 +75,13 @@ INSERT INTO `usuario` (`id`, `nome`, `senha`, `funcao`, `cpf`, `idade`) VALUES
 --
 
 --
+-- Índices para tabela `tarefas`
+--
+ALTER TABLE `tarefas`
+  ADD PRIMARY KEY (`id_tarefa`),
+  ADD KEY `id_usuario` (`id_usuario`);
+
+--
 -- Índices para tabela `usuario`
 --
 ALTER TABLE `usuario`
@@ -72,10 +92,26 @@ ALTER TABLE `usuario`
 --
 
 --
+-- AUTO_INCREMENT de tabela `tarefas`
+--
+ALTER TABLE `tarefas`
+  MODIFY `id_tarefa` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+
+--
 -- AUTO_INCREMENT de tabela `usuario`
 --
 ALTER TABLE `usuario`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+
+--
+-- Restrições para despejos de tabelas
+--
+
+--
+-- Limitadores para a tabela `tarefas`
+--
+ALTER TABLE `tarefas`
+  ADD CONSTRAINT `tarefas_ibfk_1` FOREIGN KEY (`id_usuario`) REFERENCES `usuario` (`id`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
