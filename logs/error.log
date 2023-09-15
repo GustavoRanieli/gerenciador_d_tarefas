@@ -46,3 +46,5 @@
 2023-09-14 15:43:34 - [31merror[39m - [31mErro ao executar a consulta SQL: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1[39m
 2023-09-14 15:43:35 - [31merror[39m - [31mErro ao executar a consulta SQL: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1[39m
 2023-09-14 15:43:35 - [31merror[39m - [31mErro ao executar a consulta SQL: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1[39m
+2023-09-15 09:53:42 - [31merror[39m - [31mErro ao se conectar com o banco, Error: connect ECONNREFUSED ::1:3306[39m
+2023-09-15 09:53:42 - [31merror[39m - [31mErro ao se conectar com o banco, Error: connect ECONNREFUSED ::1:3306[39m

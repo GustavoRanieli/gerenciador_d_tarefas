@@ -1,13 +1,12 @@
 require('dotenv').config()
 
 // Dependencias
-const NodeCache = require("node-cache")
 const mysql = require('mysql2');
 const logger = require('../controlers/winston');
 
 //Configs
 const { error } = require('winston');
-const cache = new NodeCache
+const cache = require('../controlers/cache')
 
 const connection = mysql.createConnection({
   host: 'localhost',
@@ -28,6 +27,7 @@ connection.connect(( err ) => {
 
 // Funções
 let sqlSelect = `SELECT * FROM usuario WHERE `;
+let sqlAllSelect = `SELECT * FROM usuario`;
 const sqlInsert = 'INSERT INTO usuario (id, nome, senha, funcao, cpf, idade) VALUES (?, ?, ?, ?, ?, ?)';
 const sqlUpdate = 'UPDATE usuario SET nome = ?, senha = ?, funcao = ?, cpf = ?, idade = ? WHERE ID = (?)';
 const sqlDelete = 'DELETE FROM usuario WHERE ID = (?)';
@@ -55,8 +55,19 @@ const sqlControlerUser = {
           // Implementação para Adicionar...
     },
 
+    consultarTodosUsers: function( req, res ) {
+      connection.query(sqlAllSelect, (err, results) => {
+        if (err) {
+          logger.error('Erro ao executar a consulta SQL:', err);
+          return;
+        }
+        res.json(results)
+        console.log( 'Consultado com sucesso!' );
+      });
+      //Consultando todos os usuários
+    },
+
     consultaBanco: function ( req, res ) {
-      console.log(req.body)
       let conditions
       let coluna = req.body.tabela //Qual tabela procurar
       let value = req.body.valor // Valor
@@ -137,16 +148,17 @@ const sqlControlerUser = {
         const usuario = result[0];
         switch (usuario.funcao) {
           case 'user':
-            
+            cache.set('id_user', usuario.id, 3600)
             return res.render('usuario');
           case 'admin':
+            cache.set('id_admin', usuario.id, 3600)
             return res.render('admin');
           default:
             return res.status(401).send('Função de usuário desconhecida');
         }
       });
     } catch (err) {
-      console.error('Erro inesperado:', err);
+      logger.error('Erro inesperado:', err);
       res.status(500).send('Erro inesperado');
     }
   }

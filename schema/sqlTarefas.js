@@ -40,7 +40,7 @@ const tarefasController = {
               return;
             }
             res.json(results)
-            console.log('Resultados da consulta:', results);
+            console.log('Consulta feita com sucesso Tarefas!');
           });
       // Implementação para consultar tarefas...
     },
