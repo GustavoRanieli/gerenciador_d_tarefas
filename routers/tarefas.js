@@ -5,13 +5,14 @@ const router = express.Router();
 const tarefasController = require('../schema/sqlTarefas')
 
 // Gets
-router.post('/consultarTarefa/:id', tarefasController.consultarTarefas)
 router.get('/deleteTarefa/:id', tarefasController.deletarTarefa)
 
 
 // Posts
-router.post('/novoTarefa', tarefasController.adicionarTarefa)
+router.post('/novaTarefa', tarefasController.adicionarTarefa)
 router.post('/atualizarTarefa/:id', tarefasController.editarTarefa)
+router.post('/consultarTarefa/:id', tarefasController.consultarTarefas)
+router.post('/consultarTarefaEspecifica/:id', tarefasController.consultarTarefaEspecifica)
 
 
 module.exports = router

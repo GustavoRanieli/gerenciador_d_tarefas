@@ -104,7 +104,7 @@ const sqlControlerUser = {
           res.status(500).send('Erro ao Atualizar!')
         }else{
           logger.info('Usuário Atualizado com sucesso!')
-          res.status(200).send('Usuário Atualizado!')
+          res.status(200).render('admin')
         }
     })
     // Implementação para Editar...
@@ -118,7 +118,7 @@ const sqlControlerUser = {
             res.status(500).send('Erro ao deletar!')
           }else{
             logger.info('Usuário deletado com sucesso!')
-            res.status(200).send('Usuário deletado!')
+            res.status(200).render('admin')
           }
       })
       // Implementação para Deletar...

@@ -35,9 +35,35 @@ app.get('/', ( req, res ) => {
     res.render('login')
 })
 
+app.get('/novoUsuario', ( req, res) =>{
+    res.render('newUser')
+})
+
+app.get('/novaTaks', ( req, res ) => {
+    let idUser = cache.get('id_user_para_consultar_tarefas');
+    let idConfirm = cache.get('id_user_para_consultar_tarefas');
+    res.render('newTask', { idUser, idConfirm });
+})
+
+app.get('/novaTaksAllUsers', ( req, res ) => {
+    let idUser = cache.get('id_user_para_consultar_tarefas');
+    let idConfirm = '';
+    res.render('newTask', { idUser, idConfirm });
+})
+
 app.get('/tarefas/:id', ( req, res ) => {
     cache.set('id_user_para_consultar_tarefas', req.params.id, 3600)
     res.render('tarefas')
+})
+
+app.get('/editUser/:id', ( req, res ) => {
+    let id = req.params.id;
+    res.render('editUser', {id});
+})
+
+app.get('/editTask/:id', ( req, res ) => {
+    let id_taks = req.params.id
+    res.render('editTask', { id_taks })
 })
 
 // Atribuindo Rotas existentes

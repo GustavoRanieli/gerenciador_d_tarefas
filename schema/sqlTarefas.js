@@ -6,7 +6,7 @@ const mysql = require('mysql2');
 const logger = require('../controlers/winston');
 
 //Configs
-const cache = new NodeCache
+const cache = require('../controlers/cache')
 
 const connection = mysql.createConnection({
   host: 'localhost',
@@ -26,8 +26,9 @@ connection.connect(( err ) => {
 
 // Consultas SQL para a tabela de tarefas
 const sqlQueryTarefas = 'SELECT * FROM tarefas WHERE id_usuario = ?';
+const sqlQueryTarefasSearch = 'SELECT * FROM tarefas WHERE dia_semana = ? AND id_usuario = ?'
 const sqlInsertTarefa = 'INSERT INTO tarefas (dia_semana, descricao_tarefa, condominio, concluido, justificativa, id_usuario, dia_da_tarefa, hora_da_tarefa) VALUES (?, ?, ?, ?, ?, ?, ?, ?)';
-const sqlUpdateTarefa = 'UPDATE tarefas SET descricao_tarefa = ?, concluido = ?, justificativa = ? WHERE id_tarefa = ?';
+const sqlUpdateTarefa = 'UPDATE tarefas SET dia_semana = ?, descricao_tarefa = ?, justificativa = ?, concluido = ? WHERE id_tarefa = ?';
 const sqlDeleteTarefa = 'DELETE FROM tarefas WHERE id_tarefa = ?';
 
 // Controlador
@@ -44,6 +45,21 @@ const tarefasController = {
           });
       // Implementação para consultar tarefas...
     },
+
+    consultarTarefaEspecifica: function ( req, res ){
+      let dia_semana = req.body.dia;
+      let id = req.body.id;
+
+      connection.query(sqlQueryTarefasSearch, [dia_semana, id], (err, results) => {
+        if (err) {
+          logger.error('Erro ao executar a consulta SQL:', err);
+          return;
+        }
+        res.json(results)
+        console.log('Consulta feita com sucesso Tarefas!');
+      });
+    // Implementação para consultar tarefas especificas...
+    },
     adicionarTarefa: function (req, res) {
         const novaTarefa = {
             dia_semana: req.body.dia,
@@ -52,8 +68,8 @@ const tarefasController = {
             concluido: req.body.concluido,
             justificativa: req.body.justificativa,
             id_usuario: req.body.usuario,
-            dia_da_tarefa: "",
-            hora_da_tarefa: ""
+            dia_da_tarefa: req.body.dia_da_tarefa,
+            hora_da_tarefa: req.body.horario_tarefa
         }
 
         connection.query(sqlInsertTarefa, [novaTarefa.dia_semana, novaTarefa.descricao_tarefa, novaTarefa.condominio, novaTarefa.concluido, novaTarefa.justificativa, novaTarefa.id_usuario, novaTarefa.dia_da_tarefa, novaTarefa.hora_da_tarefa], (err, result) => {
@@ -62,33 +78,35 @@ const tarefasController = {
               res.status(500).send('Erro')
             }else{
               logger.info('Registro inserido com sucesso. ID:', result);
-              res.status(200).send('Tarefa Cadastrado!')
+              res.status(200).render('admin')
             }
         });
       // Implementação para adicionar tarefas...
     },
     editarTarefa: function (req, res) {
         let ID = req.params.id
-
-        let novoUser = {
+        let id_usuario =cache.get('id_user_para_consultar_tarefas')
+        let novaTarefa = {
+            dia: req.body.dia,
             justificativa: req.body.justificativa,
             descricao_tarefa: req.body.descricao, 
             concluido: req.body.concluido, 
         }
 
-      connection.query(sqlUpdate, [ID], ( err, results ) => {
+      connection.query(sqlUpdateTarefa, [novaTarefa.dia, novaTarefa.descricao_tarefa, novaTarefa.justificativa, novaTarefa.concluido, ID], ( err, results ) => {
         if( err ){
           console.log(err)
-          logger.error('Erro ao atualizar usuário!');
+          logger.error('Erro ao atualizar Tarefa!');
           res.status(500).send('Erro ao Atualizar!')
         }else{
-          logger.info('Usuário Atualizado com sucesso!')
-          res.status(200).send('Usuário Atualizado!')
+          logger.info('Tarefa Atualizada com sucesso!')
+          res.status(200).redirect(`/tarefas/${id_usuario}`)
         }
     })
       // Implementação para editar tarefas...
     },
     deletarTarefa: function (req, res) {
+        let idUser = cache.get('id_user_para_consultar_tarefas')
         let id = req.params.id
         connection.query(sqlDeleteTarefa, [id], ( err, results ) => {
           if( err ){
@@ -96,7 +114,7 @@ const tarefasController = {
             res.status(500).send('Erro ao deletar!')
           }else{
             logger.info('Tarefa deletado com sucesso!')
-            res.status(200).send('Tarefa Deletada!')
+            res.status(200).redirect(`/tarefas/${idUser}`)
           }
       })
       // Implementação para deletar tarefas...

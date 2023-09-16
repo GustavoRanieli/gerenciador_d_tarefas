@@ -48,3 +48,29 @@
 2023-09-14 15:43:35 - [31merror[39m - [31mErro ao executar a consulta SQL: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1[39m
 2023-09-15 09:53:42 - [31merror[39m - [31mErro ao se conectar com o banco, Error: connect ECONNREFUSED ::1:3306[39m
 2023-09-15 09:53:42 - [31merror[39m - [31mErro ao se conectar com o banco, Error: connect ECONNREFUSED ::1:3306[39m
+2023-09-15 16:37:31 - [31merror[39m - [31mErro ao executar a consulta SQL: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' dia_semana = ?' at line 1[39m
+2023-09-15 16:37:33 - [31merror[39m - [31mErro ao executar a consulta SQL: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' dia_semana = ?' at line 1[39m
+2023-09-15 16:38:28 - [31merror[39m - [31mErro ao executar a consulta SQL: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' dia_semana = ?' at line 1[39m
+2023-09-15 16:38:31 - [31merror[39m - [31mErro ao executar a consulta SQL: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' dia_semana = ?' at line 1[39m
+2023-09-15 16:39:59 - [31merror[39m - [31mErro ao executar a consulta SQL: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' dia_semana = ?' at line 1[39m
+2023-09-15 16:40:09 - [31merror[39m - [31mErro ao executar a consulta SQL: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' dia_semana = ?' at line 1[39m
+2023-09-15 16:45:34 - [31merror[39m - [31mErro ao executar a consulta SQL: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' dia_semana = 'Terça'' at line 1[39m
+2023-09-15 16:45:41 - [31merror[39m - [31mErro ao executar a consulta SQL: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' dia_semana = 'Terça'' at line 1[39m
+2023-09-15 16:45:43 - [31merror[39m - [31mErro ao executar a consulta SQL: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' '1', dia_semana = 'Terça', 'Segunda'' at line 1[39m
+2023-09-15 16:48:14 - [31merror[39m - [31mErro ao executar a consulta SQL: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' dia_semana = 'Quarta'' at line 1[39m
+2023-09-15 16:48:20 - [31merror[39m - [31mErro ao executar a consulta SQL: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' '1', dia_semana = 'Quarta', 'Terça'' at line 1[39m
+2023-09-15 16:49:00 - [31merror[39m - [31mErro ao executar a consulta SQL: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' '1', '1', dia_semana = 'Quarta', 'Terça', 'Domingo'' at line 1[39m
+2023-09-15 16:51:25 - [31merror[39m - [31mErro ao executar a consulta SQL: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' dia_semana = 'Terça'' at line 1[39m
+2023-09-15 16:51:30 - [31merror[39m - [31mErro ao executar a consulta SQL: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' dia_semana = 'Quinta'' at line 1[39m
+2023-09-15 16:51:37 - [31merror[39m - [31mErro ao executar a consulta SQL: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' dia_semana = 'Sexta'' at line 1[39m
+2023-09-15 16:52:10 - [31merror[39m - [31mErro ao executar a consulta SQL: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' dia_semana = ('Terça')' at line 1[39m
+2023-09-15 16:52:17 - [31merror[39m - [31mErro ao executar a consulta SQL: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' dia_semana = ('Quinta')' at line 1[39m
+2023-09-16 10:27:12 - [31merror[39m - [31mErro ao se conectar com o banco, Error: connect ECONNREFUSED ::1:3306[39m
+2023-09-16 10:27:12 - [31merror[39m - [31mErro ao se conectar com o banco, Error: connect ECONNREFUSED ::1:3306[39m
+2023-09-16 11:49:27 - [31merror[39m - [31mErro ao inserir registro no banco de dados: Column 'descricao_tarefa' cannot be null[39m
+2023-09-16 11:51:31 - [31merror[39m - [31mErro ao inserir registro no banco de dados: Column 'descricao_tarefa' cannot be null[39m
+2023-09-16 11:51:36 - [31merror[39m - [31mErro ao inserir registro no banco de dados: Column 'descricao_tarefa' cannot be null[39m
+2023-09-16 11:53:11 - [31merror[39m - [31mErro ao inserir registro no banco de dados: Column 'descricao_tarefa' cannot be null[39m
+2023-09-16 17:35:21 - [31merror[39m - [31mErro ao atualizar usuário![39m
+2023-09-16 18:43:42 - [31merror[39m - [31mErro ao atualizar usuário![39m
+2023-09-16 18:52:38 - [31merror[39m - [31mErro ao atualizar Tarefa![39m

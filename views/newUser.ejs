@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt_Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header></header>
+    <main>
+        <form action="/novoUser" method="post" enctype="application/x-www-form-urlencoded">
+            <input name="nome" type="text">
+            <input name="senha" type="text">
+            <select name="funcao">
+                <option value="user">Usuário</option>
+                <option value="admin">Administrador</option>
+            </select>
+            <input name="cpf" type="text">
+            <input name="idade" type="text">
+            <button type="submit">Criar</button>
+        </form>
+    </main>
+</body>
+</html>

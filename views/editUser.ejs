@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt_Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/atualizarUser/<%= id %>" method="post" enctype="application/x-www-form-urlencoded"> 
+        <input style="display: none;" id="IdEdit" value="<%= id %>" type="text">
+        <input id="NomeEdit" name="nome" type="text">
+        <input id="SenhaEdit" name="senha" type="text">
+        <input id="FuncaoEdit" name="funcao" type="text">
+        <input id="CpfEdit" name="cpf" type="text">
+        <input id="IdadeEdit" name="idade" type="text">
+        <button type="submit">Enviar</button>
+    </form>
+
+    <a href="/loginUser"><button>Voltar</button></a>
+    <script src="../public/scripts/editHome.js" type="text/javascript" charset="UTF-8"></script>
+</body>
+</html>
