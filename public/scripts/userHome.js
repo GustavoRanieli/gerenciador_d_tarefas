@@ -47,25 +47,28 @@ async function consultarTasks(id){
                 .then( data => {
                         data.forEach( element => {
                                 container.innerHTML += `
-                                <form>
-                                        <div id="Tarefas">
-                                                ${element.descricao_tarefa}
+                                <form action="/atualizarTarefa/${element.id_tarefa}" method="post" enctype="application/x-www-form-urlencoded"">
+                                        <div id="Tarefas" >
+                                               <input type="text" value="${element.descricao_tarefa}" name="descricao"> 
                                         </div>
 
                                         <div id="Dia">
-                                                ${element.dia_semana}
+                                                <input type="text" value="${element.dia_semana}" name="dia">         
                                         </div>
 
-                                        <div id="Justificativa">
+                                        <div id="Justificativa" name="justificativa">
                                                 <input name="justificativa" type="text">
                                         </div>
 
                                         <div id="Condicao">
-                                                ${element.concluido}
+                                                <select name="concluido">
+                                                        <option value="0">Incompleto</option>
+                                                        <option value="1">Completo</option>
+                                                </select>
                                         </div>
 
                                         <div id="BtSubmit">
-                                                <button>Enviar</button>
+                                                <button type="submit">Enviar</button>
                                         </div>
                                 </form>`
                         })

@@ -74,3 +74,10 @@
 2023-09-16 17:35:21 - [31merror[39m - [31mErro ao atualizar usuário![39m
 2023-09-16 18:43:42 - [31merror[39m - [31mErro ao atualizar usuário![39m
 2023-09-16 18:52:38 - [31merror[39m - [31mErro ao atualizar Tarefa![39m
+2023-09-16 21:27:43 - [31merror[39m - [31mErro ao se conectar com o banco, Error: Unknown database 'gerenciador_d_sistemas'[39m
+2023-09-16 21:27:43 - [31merror[39m - [31mErro ao se conectar com o banco, Error: Unknown database 'gerenciador_d_sistemas'[39m
+2023-09-17 02:18:27 - [31merror[39m - [31mErro ao deletar usuário![39m
+2023-09-17 02:18:33 - [31merror[39m - [31mErro ao deletar usuário![39m
+2023-09-17 04:05:16 - [31merror[39m - [31mErro ao deletar usuário![39m
+2023-09-17 12:11:17 - [31merror[39m - [31mErro ao se conectar com o banco, Error: Unknown database 'production'[39m
+2023-09-17 12:11:17 - [31merror[39m - [31mErro ao se conectar com o banco, Error: Unknown database 'production'[39m

@@ -3,34 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/stylesheet/admin.css">
     <title>Document</title>
 </head>
 <body>
     <header></header>
+
+    <img class="logo_painel_admin" src="../public/image/Logo.png" alt="logo da empresa">
+
+    <article>
+        <div class="subtitulo_painel_admin">
+            <h2>DIGITE OS DADOS DO SEU FUNCIONÁRIO:</h2>
+        </div>
+    </article>
     <main>
-        <div>
+
+        <section class="section_input_Search">
             <div>
-                <input id="Search" type="text">
+                <input id="Search" type="text" class="input_search">
                 <select name="where" id="Opcao_d_consulta">
                     <option value="nome">Nome</option>
                     <option value="cpf">Cpf</option>
-                    <option value="funcao">Função</option>
                 </select>
-                
             </div>
-            <div> 
-                <div id="Nome_d_usuarios"></div>
-                <div id="CPF"></div>
-                <div id="Função"></div>
-                <div id="Svgs"></div>
+        </section>
+
+        <section class="section_user">
+            <div>
+                <div class="section_user_dados">
+                    <div id="Nome_d_usuarios" ></div>
+                    <div class="section_user_Svgs"  id="Svgs"></div>
+                </div>
             </div>
-        </div>
-        <div>
-            <a href="/novoUsuario"><button>Novo Usuário</button></a>
-            <a href="/novaTaksAllUsers"><button>Nova Tarefa</button></a>
-        </div>
+        </section>
+        
+        <section  >
+            <div class="section_dados">
+                <a href="/novoUsuario" class="myButton">Adicionar Usuário</a>
+                <a href="/novaTaksAllUsers" class="myButton">Adicionar Usuário</a>  
+            </div>
+        </section>
+        
     </main>
-    <footer></footer>
+    <footer>
+        <div>
+            <p>Agillité Services 2023</p>
+        </div>
+    </footer>
 
     <script src="../public/scripts/adminHome.js" type="text/javascript" charset="UTF-8"></script>
 </body>

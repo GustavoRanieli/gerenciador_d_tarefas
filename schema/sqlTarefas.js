@@ -45,7 +45,6 @@ const tarefasController = {
           });
       // Implementação para consultar tarefas...
     },
-
     consultarTarefaEspecifica: function ( req, res ){
       let dia_semana = req.body.dia;
       let id = req.body.id;
@@ -86,6 +85,7 @@ const tarefasController = {
     editarTarefa: function (req, res) {
         let ID = req.params.id
         let id_usuario =cache.get('id_user_para_consultar_tarefas')
+
         let novaTarefa = {
             dia: req.body.dia,
             justificativa: req.body.justificativa,

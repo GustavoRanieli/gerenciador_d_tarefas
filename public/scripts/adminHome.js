@@ -20,8 +20,8 @@ const inputSearch = document.querySelector('#Search')
 inputSearch.addEventListener("input", async () => {
     if(inputSearch.value == ''){
         nome_list.innerHTML = '';
-        cpf_list.innerHTML = '';
-        funcao_list.innerHTML = '';
+        // cpf_list.innerHTML = '';
+        // funcao_list.innerHTML = '';
         div_svgs.innerHTML = '';
         consultarTodosUsers();
     }
@@ -63,11 +63,11 @@ function consultarBanco(whereUser, valorWhere){
 
                 // Adicionando valores ao HTML
                 data.forEach(element => {
-                    nome_list.innerHTML += `<a href="/tarefas/${element.id}"><h1>${element.nome}</h1></a>`;
-                    cpf_list.innerHTML += `<h1>${element.cpf}</h1>`;
-                    funcao_list.innerHTML += `<h1>${element.funcao}</h1>`;
+                    nome_list.innerHTML += `<a href="/tarefas/${element.id}"><p>${element.nome}</p></a>`;
+                    cpf_list.innerHTML += `<p>${element.cpf}</p>`;
+                    funcao_list.innerHTML += `<p>${element.funcao}</p>`;
                     div_svgs.innerHTML += `<button>Editar</button>
-                                 <a href="/deleteUser/${element.id}"><button>Deletar</button></a>`
+                                 <a href="/deleteUser/${element.id}"><button><img class="img_lixo" src="../public/image/icons8-trash-48.png" alt="lixo"></button></a>`
                 });
         })
 }
@@ -85,11 +85,11 @@ async function consultarTodosUsers(){
         .then( data => {
             console.log(data)
             data.forEach(element => {
-                nome_list.innerHTML += `<a href="/tarefas/${element.id}"><h1>${element.nome}</h1></a>`;
-                cpf_list.innerHTML += `<h1>${element.cpf}</h1>`;
-                funcao_list.innerHTML += `<h1>${element.funcao}</h1>`;
-                div_svgs.innerHTML += `<a href="/editUser/${element.id}"><button>Editar</button></a>
-                            <a href="/deleteUser/${element.id}"><button>Deletar</button></a>`
+                nome_list.innerHTML += `<a class="name_user" href="/tarefas/${element.id}"><h1>${element.nome}</h1></a>`;
+                // cpf_list.innerHTML += `<h1>${element.cpf}</h1>`;
+                // funcao_list.innerHTML += `<h1>${element.funcao}</h1>`;
+                div_svgs.innerHTML += `<a href="/editUser/${element.id}"><img width=30% class="img_editar" src="../public/image/icons8-edit-48.png" alt="lixo"></a>
+                            <a href="/deleteUser/${element.id}"><img width=30% class="img_lixo" src="../public/image/icons8-trash-48.png" alt="lixo"></a>`
             });
         })
 }

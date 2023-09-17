@@ -27,7 +27,7 @@ connection.connect(( err ) => {
 
 // Funções
 let sqlSelect = `SELECT * FROM usuario WHERE `;
-let sqlAllSelect = `SELECT * FROM usuario`;
+let sqlAllSelect = `SELECT * FROM usuario WHERE id <> ?`;
 const sqlInsert = 'INSERT INTO usuario (id, nome, senha, funcao, cpf, idade) VALUES (?, ?, ?, ?, ?, ?)';
 const sqlUpdate = 'UPDATE usuario SET nome = ?, senha = ?, funcao = ?, cpf = ?, idade = ? WHERE ID = (?)';
 const sqlDelete = 'DELETE FROM usuario WHERE ID = (?)';
@@ -56,7 +56,8 @@ const sqlControlerUser = {
     },
 
     consultarTodosUsers: function( req, res ) {
-      connection.query(sqlAllSelect, (err, results) => {
+      let id = cache.get('id_admin')
+      connection.query(sqlAllSelect, [id], (err, results) => {
         if (err) {
           logger.error('Erro ao executar a consulta SQL:', err);
           return;
@@ -124,44 +125,44 @@ const sqlControlerUser = {
       // Implementação para Deletar...
     },
 
-  /**
-   * 
-   * @param {*} req 
-   * @param {*} res 
-   * 
-   * Função que efetua a verificação das credenciais de acesso do usuário
-   */
-  loginUsuario: function (req, res) {
-    const { senha, cpf } = req.body;
+    /**
+     * 
+     * @param {*} req 
+     * @param {*} res 
+     * 
+     * Função que efetua a verificação das credenciais de acesso do usuário
+     */
+    loginUsuario: function (req, res) {
+      const { senha, cpf } = req.body;
 
-    try {
-      connection.query(sqlSelectLogin, [cpf, senha], (err, result) => {
-        if (err) {
-          console.error('Erro ao Procurar os usuários:', err);
-          return res.status(500).send('Erro ao Procurar os usuários');
-        }
+      try {
+        connection.query(sqlSelectLogin, [cpf, senha], (err, result) => {
+          if (err) {
+            console.error('Erro ao Procurar os usuários:', err);
+            return res.status(500).send('Erro ao Procurar os usuários');
+          }
 
-        if (result.length === 0) {
-          return res.status(401).send('Credenciais inválidas');
-        }
+          if (result.length === 0) {
+            return res.status(401).send('Credenciais inválidas');
+          }
 
-        const usuario = result[0];
-        switch (usuario.funcao) {
-          case 'user':
-            cache.set('id_user', usuario.id, 3600)
-            return res.render('usuario');
-          case 'admin':
-            cache.set('id_admin', usuario.id, 3600)
-            return res.render('admin');
-          default:
-            return res.status(401).send('Função de usuário desconhecida');
-        }
-      });
-    } catch (err) {
-      logger.error('Erro inesperado:', err);
-      res.status(500).send('Erro inesperado');
+          const usuario = result[0];
+          switch (usuario.funcao) {
+            case 'user':
+              cache.set('id_user', usuario.id, 3600)
+              return res.render('usuario');
+            case 'admin':
+              cache.set('id_admin', usuario.id, 3600)
+              return res.render('admin');
+            default:
+              return res.status(401).send('Função de usuário desconhecida');
+          }
+        });
+      } catch (err) {
+        logger.error('Erro inesperado:', err);
+        res.status(500).send('Erro inesperado');
+      }
     }
-  }
 }
 
 module.exports = sqlControlerUser
