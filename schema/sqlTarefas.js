@@ -25,14 +25,26 @@ connection.connect(( err ) => {
   });
 
 // Consultas SQL para a tabela de tarefas
+const sqlTarefaDetalhada = 'SELECT * FROM tarefas where id_tarefa = ?'
 const sqlQueryTarefas = 'SELECT * FROM tarefas WHERE id_usuario = ?';
 const sqlQueryTarefasSearch = 'SELECT * FROM tarefas WHERE dia_semana = ? AND id_usuario = ?'
-const sqlInsertTarefa = 'INSERT INTO tarefas (dia_semana, descricao_tarefa, condominio, concluido, justificativa, id_usuario, dia_da_tarefa, hora_da_tarefa) VALUES (?, ?, ?, ?, ?, ?, ?, ?)';
-const sqlUpdateTarefa = 'UPDATE tarefas SET dia_semana = ?, descricao_tarefa = ?, justificativa = ?, concluido = ? WHERE id_tarefa = ?';
+const sqlInsertTarefa = 'INSERT INTO tarefas (dia_semana, descricao_tarefa, condominio, concluido, justificativa, id_usuario, dia_da_tarefa, hora_da_tarefa, nome_tarefa) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)';
+const sqlUpdateTarefa = 'UPDATE tarefas SET dia_semana = ?, descricao_tarefa = ?, justificativa = ?, concluido = ?, nome_tarefa = ? WHERE id_tarefa = ?';
 const sqlDeleteTarefa = 'DELETE FROM tarefas WHERE id_tarefa = ?';
 
 // Controlador
 const tarefasController = {
+    detalhesTarefa: function ( req, res ){
+      connection.query(sqlTarefaDetalhada, [req.params.id], ( err, results ) => {
+        if( err ){
+          logger.error('Erro ao consultar tarefa:', err);
+          return
+        }
+        let tarefa = results[0]
+        console.log(tarefa)
+        res.render('tarefaDetalhe', {tarefa})
+      })
+    },
     consultarTarefas: function (req, res) {
         id = req.params.id
         connection.query(sqlQueryTarefas, [id],(err, results) => {
@@ -68,10 +80,11 @@ const tarefasController = {
             justificativa: req.body.justificativa,
             id_usuario: req.body.usuario,
             dia_da_tarefa: req.body.dia_da_tarefa,
-            hora_da_tarefa: req.body.horario_tarefa
+            hora_da_tarefa: req.body.horario_tarefa,
+            nome_tarefa: req.body.nome_tarefa
         }
 
-        connection.query(sqlInsertTarefa, [novaTarefa.dia_semana, novaTarefa.descricao_tarefa, novaTarefa.condominio, novaTarefa.concluido, novaTarefa.justificativa, novaTarefa.id_usuario, novaTarefa.dia_da_tarefa, novaTarefa.hora_da_tarefa], (err, result) => {
+        connection.query(sqlInsertTarefa, [novaTarefa.dia_semana, novaTarefa.descricao_tarefa, novaTarefa.condominio, novaTarefa.concluido, novaTarefa.justificativa, novaTarefa.id_usuario, novaTarefa.dia_da_tarefa, novaTarefa.hora_da_tarefa, novaTarefa.nome_tarefa], (err, result) => {
             if (err) {
               logger.error('Erro ao inserir registro no banco de dados:', err);
               res.status(500).send('Erro')
@@ -91,9 +104,10 @@ const tarefasController = {
             justificativa: req.body.justificativa,
             descricao_tarefa: req.body.descricao, 
             concluido: req.body.concluido, 
+            nome_tarefa: req.body.nome_tarefa
         }
 
-      connection.query(sqlUpdateTarefa, [novaTarefa.dia, novaTarefa.descricao_tarefa, novaTarefa.justificativa, novaTarefa.concluido, ID], ( err, results ) => {
+      connection.query(sqlUpdateTarefa, [novaTarefa.dia, novaTarefa.descricao_tarefa, novaTarefa.justificativa, novaTarefa.concluido, novaTarefa.nome_tarefa, ID], ( err, results ) => {
         if( err ){
           console.log(err)
           logger.error('Erro ao atualizar Tarefa!');
@@ -118,7 +132,7 @@ const tarefasController = {
           }
       })
       // Implementação para deletar tarefas...
-    },
+    }
   };
   
   module.exports = tarefasController;

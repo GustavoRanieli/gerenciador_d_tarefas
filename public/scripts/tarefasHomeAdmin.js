@@ -25,10 +25,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
 // Variaveis
 const dia_da_semana = document.querySelector('#Dia_da_semana');
-const campo_tarefa = document.querySelector('#Tarefa');
-const campo_dia = document.querySelector('#Dia');
-const campo_condominio = document.querySelector('#Condominio');
-const buttons_delete_edit = document.querySelector('#ButtonsEditDelete')
+const container = document.querySelector('#Container_Tasks');
 
 // Consultando
 dia_da_semana.addEventListener('change', (e) => {
@@ -55,11 +52,23 @@ const config = {
         })
         .then( data => {
             data.forEach(element => {
-                campo_tarefa.innerHTML += `<h1>${element.descricao_tarefa}</h1>`;
-                campo_condominio.innerHTML += `<h1>${element.dia_semana}</h1>`;
-                campo_dia.innerHTML += `<h1>${element.condominio}</h1>`;
-                buttons_delete_edit.innerHTML += `<a href="/editTask/${element.id_tarefa}" href=""><button>Editar</button></a>
-                                                <a href="/deleteTarefa/${element.id_tarefa}"><button>Deletar</button></a>`
+                container.innerHTML += `
+                    <div>
+                        <div>
+                            <a href="/tarefa/${element.id_tarefa}"><h1>${element.nome_tarefa}</h1></a>
+                        </div>
+                        <div>
+                            <h1>${element.dia_semana}</h1>
+                        </div>
+                        <div>
+                            <h1>${element.condominio}</h1>
+                        </div>
+                        <div>
+                            <a href="/editTask/${element.id_tarefa}" href=""><button>Editar</button></a>
+                            <a href="/deleteTarefa/${element.id_tarefa}"><button>Deletar</button></a>
+                        </div>
+                    </div>
+                `
             })
         })
         .catch( err => {
@@ -90,18 +99,26 @@ const config = {
             return response.json();
         })
         .then( data => {
-            console.log(data)
-            campo_tarefa.innerHTML = "";
-            campo_condominio.innerHTML = "";
-            campo_dia.innerHTML = "";
-            buttons_delete_edit.innerHTML = ""
+            container.innerHTML = ""
 
             data.forEach(element => {
-                campo_tarefa.innerHTML += `<h1>${element.descricao_tarefa}</h1>`;
-                campo_condominio.innerHTML += `<h1>${element.dia_semana}</h1>`;
-                campo_dia.innerHTML += `<h1>${element.condominio}</h1>`;
-                buttons_delete_edit.innerHTML += `<a href="/editTask/${element.id_tarefa}" href=""><button>Editar</button></a>
-                                                <a href="/deleteTarefa/${element.id_tarefa}"><button>Deletar</button></a>`
+                container.innerHTML += `
+                    <div>
+                        <div>
+                            <h1>${element.nome_tarefa}</h1>
+                        </div>
+                        <div>
+                            <h1>${element.dia_semana}</h1>
+                        </div>
+                        <div>
+                            <h1>${element.condominio}</h1>
+                        </div>
+                        <div>
+                            <a href="/editTask/${element.id_tarefa}" href=""><button>Editar</button></a>
+                            <a href="/deleteTarefa/${element.id_tarefa}"><button>Deletar</button></a>
+                        </div>
+                    </div>
+                `
             })
         })
         .catch( err => {

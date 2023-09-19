@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt_Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header></header>
+    <main>
+        <h1><%= tarefa.nome_tarefa %></h1>
+        <div>
+            <label for="">Descrição:
+                <input type="text" value="<%= tarefa.descricao_tarefa %>">
+            </label>
+            <label for="">Condominio:
+                <input type="text" value="<%= tarefa.condominio %>">
+            </label>
+            <label for="">
+                <select name="" id="">
+                    <option <%= tarefa.concluido === 1 ? 'selected' : '' %> value="Concluido">Concluido</option>
+                    <option <%= tarefa.concluido === 0 ? 'selected' : '' %> value="Incompleto">Incompleto</option>
+                </select>
+            </label>
+            <label for="">Justificativa:
+                <input type="text" name="" value="<%= tarefa.justifica %>">
+            </label>
+            <label for="">Hora criada:
+                <input type="text" value="<%= tarefa.hora_da_tarefa %>">
+            </label>
+            <label for="">Data de criação:
+                <input type="text" value="<%= tarefa.dia_da_tarefa %>">
+            </label>
+        </div>
+        <a href="/tarefas/<%= tarefa.id_usuario %>"><button>Voltar</button></a>
+    </main>
+</body>
+</html>

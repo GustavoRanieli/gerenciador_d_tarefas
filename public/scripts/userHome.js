@@ -48,8 +48,8 @@ async function consultarTasks(id){
                         data.forEach( element => {
                                 container.innerHTML += `
                                 <form action="/atualizarTarefa/${element.id_tarefa}" method="post" enctype="application/x-www-form-urlencoded"">
-                                        <div id="Tarefas" >
-                                               <input type="text" value="${element.descricao_tarefa}" name="descricao"> 
+                                        <div>
+                                                <a href="/tarefa/${element.id_tarefa}"><h1>${element.nome_tarefa}</h1></a>
                                         </div>
 
                                         <div id="Dia">

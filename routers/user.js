@@ -7,7 +7,8 @@ const userControler = require('../schema/sqlUsers')
 // Gets
 router.get('/deleteUser/:id', userControler.deleteUsuario);
 router.get('/allUsers', userControler.consultarTodosUsers);
-
+router.get('/administrate', userControler.renderizarAdmin);
+router.get('/paginainicial', userControler.renderizarUsuario)
 
 // Posts
 router.post('/consultarUser', userControler.consultaBanco);

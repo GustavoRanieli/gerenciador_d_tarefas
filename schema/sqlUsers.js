@@ -150,10 +150,10 @@ const sqlControlerUser = {
           switch (usuario.funcao) {
             case 'user':
               cache.set('id_user', usuario.id, 3600)
-              return res.render('usuario');
+              return res.redirect('/paginainicial')
             case 'admin':
               cache.set('id_admin', usuario.id, 3600)
-              return res.render('admin');
+              return res.redirect('/administrate');
             default:
               return res.status(401).send('Função de usuário desconhecida');
           }
@@ -161,6 +161,26 @@ const sqlControlerUser = {
       } catch (err) {
         logger.error('Erro inesperado:', err);
         res.status(500).send('Erro inesperado');
+      }
+    },
+
+    renderizarAdmin: function( req, res ){
+      if(cache.has('id_admin')){
+        let adminId = cache.get('id_admin');
+        res.render('admin');
+      }else{
+        logger.err('Não existe usuário registrado no cache!')
+        res.send('Administrador não encontrado')
+      }
+    },
+    
+    renderizarUsuario: function( req, res ){
+      if(cache.has('id_user')){
+        let adminId = cache.get('id_user');
+        res.render('usuario');
+      }else{
+        logger.err('Não existe usuário registrado no cache!')
+        res.send('Usuário não encontrado')
       }
     }
 }
