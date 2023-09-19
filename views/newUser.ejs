@@ -1,24 +1,70 @@
 <!DOCTYPE html>
 <html lang="pt_Br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/stylesheet/novoUsuario.css">
     <title>Document</title>
 </head>
+
 <body>
     <header></header>
+
+    <img class="logo_painel_admin" src="../public/image/Logo.png" alt="logo da empresa">
+
+    <article>
+        <div class="subtitulo_painel_admin">
+            <h2>DIGITE OS DADOS PARA ADICIONAR UM NOVO USUÁRIO:</h2>
+        </div>
+    </article>
     <main>
         <form action="/novoUser" method="post" enctype="application/x-www-form-urlencoded">
-            <input name="nome" type="text">
-            <input name="senha" type="text">
-            <select name="funcao">
-                <option value="user">Usuário</option>
-                <option value="admin">Administrador</option>
-            </select>
-            <input name="cpf" type="text">
-            <input name="idade" type="text">
-            <button type="submit">Criar</button>
+            <div class="form_NewUser">
+                <div class="form-row">
+                    <label for="nome" class="form-label">Usuário</label>
+                    <input name="nome" type="text" id="nome" class="form-input">
+                </div>
+
+                <div class="form-row">
+                    <label for="senha" class="form-label">Senha</label>
+                    <input name="senha" type="text" id="senha" class="form-input">
+                </div>
+
+                <div class="form-row">
+                    <label for="funcao" class="form-label">Função</label>
+                    <select name="funcao" id="funcao" class="form-select">
+                        <option value="user">Usuário</option>
+                        <option value="admin">Administrador</option>
+                    </select>
+                </div>
+
+                <div class="form-row">
+                    <label for="cpf" class="form-label">CPF</label>
+                    <input name="cpf" type="text" id="cpf" class="form-input">
+                </div>
+
+                <div class="form-row">
+                    <label for="idade" class="form-label">Idade</label>
+                    <input name="idade" type="text" id="idade" class="form-input">
+                </div>
+            </div>
+
+            <div class="form-row-button">
+                <button type="submit" class="myButton">Criar</button>
+                <a href="/loginUser" class="myButton">Voltar</a>
+            </div>
+           
+
         </form>
+
+        <footer>
+            <div>
+                <p>Agillité Services 2023</p>
+            </div>
+        </footer>
+
     </main>
 </body>
-</html>
+
+</html> 

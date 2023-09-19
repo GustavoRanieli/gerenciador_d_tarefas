@@ -3,8 +3,8 @@ const nomeEdit = document.querySelector('#NomeEdit')
 const senhaEdit = document.querySelector('#SenhaEdit')
 const funcaoEdit = document.querySelector('#FuncaoEdit')
 const cpfEdit = document.querySelector('#CpfEdit')
+const btSubmit = document.querySelector('#BtSubmit')
 const idadeEdit = document.querySelector('#IdadeEdit')
-
 const url = `http://localhost:3000/consultarUser`
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -70,4 +70,11 @@ async function editarUsuario(){
         .catch( err => {
             console.log(err)
         })
-}
+};
+
+btSubmit.addEventListener('click', (e) => {
+    let confirmEdit = confirm('Deseja alterar as informações?')
+    if(confirmEdit){}else{
+        e.preventDefault()
+    }
+})

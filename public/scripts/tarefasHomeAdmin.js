@@ -100,8 +100,8 @@ const config = {
                 campo_tarefa.innerHTML += `<h1>${element.descricao_tarefa}</h1>`;
                 campo_condominio.innerHTML += `<h1>${element.dia_semana}</h1>`;
                 campo_dia.innerHTML += `<h1>${element.condominio}</h1>`;
-                buttons_delete_edit.innerHTML += `<a href="/editarTarefa/${element.id}" href=""><button>Editar</button></a>
-                                                <a href="/deleteTarefa/${element.id}"><button>Deletar</button></a>`
+                buttons_delete_edit.innerHTML += `<a href="/editTask/${element.id_tarefa}" href=""><button>Editar</button></a>
+                                                <a href="/deleteTarefa/${element.id_tarefa}"><button>Deletar</button></a>`
             })
         })
         .catch( err => {
