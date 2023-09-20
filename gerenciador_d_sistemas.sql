@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 14-Set-2023 às 04:15
+-- Tempo de geração: 20-Set-2023 às 05:20
 -- Versão do servidor: 10.4.27-MariaDB
 -- versão do PHP: 8.2.0
 
@@ -36,16 +36,19 @@ CREATE TABLE `tarefas` (
   `justificativa` varchar(255) DEFAULT NULL,
   `id_usuario` int(11) DEFAULT NULL,
   `dia_da_tarefa` date DEFAULT NULL,
-  `hora_da_tarefa` time DEFAULT NULL
+  `hora_da_tarefa` time DEFAULT NULL,
+  `nome_tarefa` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Extraindo dados da tabela `tarefas`
 --
 
-INSERT INTO `tarefas` (`id_tarefa`, `dia_semana`, `descricao_tarefa`, `condominio`, `concluido`, `justificativa`, `id_usuario`, `dia_da_tarefa`, `hora_da_tarefa`) VALUES
-(9, 'Segunda', 'dasdasd', 'tia', 0, 'dasdasd', 9, '2023-09-13', '22:23:41'),
-(10, 'Segunda', 'dasdasd', 'tia', 0, 'dasdasd', 9, '2023-09-13', '22:23:41');
+INSERT INTO `tarefas` (`id_tarefa`, `dia_semana`, `descricao_tarefa`, `condominio`, `concluido`, `justificativa`, `id_usuario`, `dia_da_tarefa`, `hora_da_tarefa`, `nome_tarefa`) VALUES
+(30, 'Segunda', 'Comer cu', 'Alphavile', 0, '', 17, '0000-00-00', '20:27:00', ''),
+(31, 'Segunda', 'Teste', 'Condominio', 0, '', 13, '0000-00-00', '20:28:00', ''),
+(32, 'Quinta', 'Comer cu', 'Testa', 1, 'Testando', 17, '0000-00-00', '20:29:00', ''),
+(53, 'Terça', '', 'Justificativa gay', 0, 'Testando', 1, '0000-00-00', '21:43:00', 'Quer ler é gay');
 
 -- --------------------------------------------------------
 
@@ -67,8 +70,12 @@ CREATE TABLE `usuario` (
 --
 
 INSERT INTO `usuario` (`id`, `nome`, `senha`, `funcao`, `cpf`, `idade`) VALUES
-(1, 'João', '123', 'Usuário', '5555555555555', '18'),
-(9, 'TIAMARIA', '123', 'corna', '666', '999');
+(1, 'João', '123', 'user', '666', '35'),
+(13, 'Corno', '666', 'admin', '666', '23'),
+(17, 'Pedro', '123', 'user', '555', '555'),
+(20, 'José', '456', 'user', '456', '70'),
+(22, 'tet', 'sad', 'user', 'asd', 'ada'),
+(29, 'João da silva sauro', 'dasd', 'user', 'asd', 'ad');
 
 --
 -- Índices para tabelas despejadas
@@ -95,13 +102,13 @@ ALTER TABLE `usuario`
 -- AUTO_INCREMENT de tabela `tarefas`
 --
 ALTER TABLE `tarefas`
-  MODIFY `id_tarefa` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id_tarefa` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=54;
 
 --
 -- AUTO_INCREMENT de tabela `usuario`
 --
 ALTER TABLE `usuario`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=33;
 
 --
 -- Restrições para despejos de tabelas
