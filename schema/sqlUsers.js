@@ -164,12 +164,17 @@ const sqlControlerUser = {
       }
     },
 
+    quebrarLogin: function( req, res ){
+      cache.del('id_user');
+      res.render('login');
+    },
+
     renderizarAdmin: function( req, res ){
       if(cache.has('id_admin')){
         let adminId = cache.get('id_admin');
         res.render('admin');
       }else{
-        logger.err('Não existe usuário registrado no cache!')
+        logger.error('Não existe usuário registrado no cache!')
         res.send('Administrador não encontrado')
       }
     },
@@ -179,7 +184,7 @@ const sqlControlerUser = {
         let adminId = cache.get('id_user');
         res.render('usuario');
       }else{
-        logger.err('Não existe usuário registrado no cache!')
+        logger.error('Não existe usuário registrado no cache!')
         res.send('Usuário não encontrado')
       }
     }

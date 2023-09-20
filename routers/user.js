@@ -9,6 +9,7 @@ router.get('/deleteUser/:id', userControler.deleteUsuario);
 router.get('/allUsers', userControler.consultarTodosUsers);
 router.get('/administrate', userControler.renderizarAdmin);
 router.get('/paginainicial', userControler.renderizarUsuario)
+router.get('/breakUser', userControler.quebrarLogin)
 
 // Posts
 router.post('/consultarUser', userControler.consultaBanco);

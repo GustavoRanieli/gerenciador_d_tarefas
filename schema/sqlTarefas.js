@@ -30,6 +30,7 @@ const sqlQueryTarefas = 'SELECT * FROM tarefas WHERE id_usuario = ?';
 const sqlQueryTarefasSearch = 'SELECT * FROM tarefas WHERE dia_semana = ? AND id_usuario = ?'
 const sqlInsertTarefa = 'INSERT INTO tarefas (dia_semana, descricao_tarefa, condominio, concluido, justificativa, id_usuario, dia_da_tarefa, hora_da_tarefa, nome_tarefa) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)';
 const sqlUpdateTarefa = 'UPDATE tarefas SET dia_semana = ?, descricao_tarefa = ?, justificativa = ?, concluido = ?, nome_tarefa = ? WHERE id_tarefa = ?';
+const sqlUpdateTarefaUser = 'UPDATE tarefas SET dia_semana = ?, descricao_tarefa = ?, justificativa = ?, concluido = ?, nome_tarefa = ? WHERE id_tarefa = ?';
 const sqlDeleteTarefa = 'DELETE FROM tarefas WHERE id_tarefa = ?';
 
 // Controlador
@@ -43,6 +44,17 @@ const tarefasController = {
         let tarefa = results[0]
         console.log(tarefa)
         res.render('tarefaDetalhe', {tarefa})
+      })
+    },
+    detalhesTarefaUser: function ( req, res ){
+      connection.query(sqlTarefaDetalhada, [req.params.id], ( err, results ) => {
+        if( err ){
+          logger.error('Erro ao consultar tarefa:', err);
+          return
+        }
+        let tarefa = results[0]
+        console.log(tarefa)
+        res.render('tarefaDetalheUser', {tarefa})
       })
     },
     consultarTarefas: function (req, res) {
@@ -119,6 +131,32 @@ const tarefasController = {
     })
       // Implementação para editar tarefas...
     },
+
+    editarTarefaUser: function (req, res) {
+        let ID = req.params.id
+        let id_usuario =cache.get('id_user_para_consultar_tarefas')
+
+        let novaTarefa = {
+            dia: req.body.dia,
+            justificativa: req.body.justificativa,
+            descricao_tarefa: req.body.descricao, 
+            concluido: req.body.concluido, 
+            nome_tarefa: req.body.nome_tarefa
+        }
+
+      connection.query(sqlUpdateTarefaUser, [novaTarefa.dia, novaTarefa.descricao_tarefa, novaTarefa.justificativa, novaTarefa.concluido, novaTarefa.nome_tarefa, ID], ( err, results ) => {
+        if( err ){
+          console.log(err)
+          logger.error('Erro ao atualizar Tarefa!');
+          res.status(500).send('Erro ao Atualizar!')
+        }else{
+          logger.info('Tarefa Atualizada com sucesso!')
+          res.status(200).redirect(`/paginainicial`)
+        }
+    })
+      // Implementação para editar tarefas pelo Usuário...
+    },
+
     deletarTarefa: function (req, res) {
         let idUser = cache.get('id_user_para_consultar_tarefas')
         let id = req.params.id

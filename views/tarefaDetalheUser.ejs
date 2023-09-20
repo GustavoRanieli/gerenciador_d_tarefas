@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt_Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header></header>
+    <main>
+
+        <img class="logo_painel_admin" src="../public/image/Logo.png" alt="logo da empresa">
+        <article>
+            <div class="subtitulo_painel_admin">
+                <h2>Essas são suas tarefas no dia: </h2>
+            </div>
+        </article>
+        
+        <form action="/atualizarTarefaUser/<%= tarefa.id_tarefa %>" method="post" enctype="application/x-www-form-urlencoded">
+            <input type="text" value="<%= tarefa.nome_tarefa %>" name="nome_tarefa" style="display: none;">
+            <h1><%= tarefa.nome_tarefa %></h1>
+            <div>
+                <div>
+                    <h1><%= tarefa.descricao_tarefa %></h1>
+                    <input type="text" name="descricao" value="<%= tarefa.descricao_tarefa %>" style="display: none;">
+                </div>
+                <div>
+                    <h1><%= tarefa.dia_semana %></h1>
+                    <input type="text" name="dia" value="<%= tarefa.dia_semana %>" style="display: none;">
+                </div>
+                <div>
+                    <h1>Condominio: <%= tarefa.condominio %></h1>
+                    <input type="text" value="<%= tarefa.condominio %>" style="display: none;">
+                </div>
+                <label>
+                    <select name="concluido" id="">
+                        <option <%= tarefa.concluido === 1 ? 'selected' : '' %> value="1">Concluido</option>
+                        <option <%= tarefa.concluido === 0 ? 'selected' : '' %> value="0">Incompleto</option>
+                    </select>
+                </label>
+                <label>Justificativa:
+                    <input type="text" name="justificativa">
+                </label>
+                <label>Hora criada:
+                    <input type="text" value="<%= tarefa.hora_da_tarefa %>">
+                </label>
+                <label>Data de criação:
+                    <input type="text"value="<%= tarefa.dia_da_tarefa %>">
+                </label>
+            </div>
+            <button type="submit"></button>
+        </form>
+        <a href="/paginainicial"><button>Voltar</button></a>
+    </main>
+</body>
+</html>
