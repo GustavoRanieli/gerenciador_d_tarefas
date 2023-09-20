@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt_Br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/stylesheet/editarUsuario.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <img class="logo_painel_admin" src="../public/image/Logo.png" alt="logo da empresa">
+    
+    <div class="main_content">
+        <article>
+            <div class="subtitulo_painel_admin">
+                <h2>DIGITE AS NOVAS TAREFAS DO SEU FUNCIONÁRIO:</h2>
+            </div>
+        </article>
+        <form action="/atualizarUser/<%= id %>" method="post" enctype="application/x-www-form-urlencoded">
+            <input style="display: none;" id="IdEdit" value="<%= id %>" type="text">
+            <div class="form-row">
+                <label for="NomeEdit" class="form-label">Nome</label>
+                <input id="NomeEdit" required name="nome" type="text" class="form-input">
+            </div>
+        
+            <div class="form-row">
+                <label for="SenhaEdit" class="form-label">Senha</label>
+                <input id="SenhaEdit" required name="senha" type="text" class="form-input">
+            </div>
+        
+            <div class="form-row">
+                <label for="FuncaoEdit" class="form-label">Função</label>
+                <select id="FuncaoEdit" required name="funcao" class="form-input">
+                    <option value="user">Usuário</option>
+                    <option value="admin">Administrador</option>
+                </select>
+            </div>
+        
+            <div class="form-row">
+                <label for="CpfEdit" class="form-label">CPF</label>
+                <input id="CpfEdit" required name="cpf" type="text" class="form-input">
+            </div>
+        
+            <div class="form-row">
+                <label for="IdadeEdit" class="form-label">Idade</label>
+                <input id="IdadeEdit" required name="idade" type="text" class="form-input">
+            </div>
+            
+            <div class="form-row-button">
+                <button id="BtSubmit" type="submit" class="myButton">Enviar</button>
+                <a href="/administrate"><button class="myButton">Voltar</button></a>
+            </div>  
+        </form>
+    </div>
+    
+    <footer>
+        <div>
+            <p>Agillité Services 2023</p>
+        </div>
+    </footer>
+
+
+    <script src="../public/scripts/editHome.js" type="text/javascript" charset="UTF-8"></script>
+</body>
+
+</html>

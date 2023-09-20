@@ -16,7 +16,9 @@
                 <h1>Tarefa: <%= tarefa.nome_tarefa %></h1>
             </div>
         </article>
-                <div class="container_tasks">
+        
+        <form action="/atualizarTarefaUser/<%= tarefa.id_tarefa %>" method="post" enctype="application/x-www-form-urlencoded">
+            <div class="container_tasks">
                 <input type="text" value="<%= tarefa.nome_tarefa %>" name="nome_tarefa" style="display: none;">
                     <div>
                         <h3>Descrição: <%= tarefa.descricao_tarefa %></h3>
@@ -31,6 +33,19 @@
                         <input type="text" value="<%= tarefa.condominio %>" style="display: none;">
                     </div>
                     <div>
+                        <label>Estado: ‎ ‎ 
+                            <select name="concluido" id="">
+                                <option> </option>
+                                <option value="1">Concluido</option>
+                                <option value="0">Incompleto</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div>
+                        <label class="justificativa_class">Justificativa: ‎ ‎ </label>
+                        <textarea type="text" name="justificativa"></textarea>
+                    </div>
+                    <div>
                         <label>Hora criada: ‎ ‎  
                             <input type="text" value="<%= tarefa.hora_da_tarefa %>">
                         </label>
@@ -42,8 +57,10 @@
                     </div>
                 <div class="div_buttons">
                     <a class="link_voltar" href="/paginainicial"><button class="bt_voltar">Voltar</button></a>
+                    <button class="bt_enviar" type="submit">Atualizar Tarefa</button>
                 </div>
             </div>
+        </form>
     </main>
     <footer>
         <div>

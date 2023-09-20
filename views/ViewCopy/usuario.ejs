@@ -1,21 +1,23 @@
 <!DOCTYPE html>
-<html lang="pt-Br">
+<html lang="pt_Br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../public/stylesheet/tarefas.css">
-    <title>Tarefas</title>
+    <link rel="stylesheet" href="../public/stylesheet/user.css">
+    <title>Document</title>
 </head>
 <body>
+    <header></header>
     <img class="logo_painel_admin" src="../public/image/Logo.png" alt="logo da empresa">
     <article>
         <div class="subtitulo_painel_admin">
-            <h2>SELECIONE O DIA DA SEMANA:</h2>
+            <h2>Essas são suas tarefas no dia: </h2>
         </div>
     </article>
 
-    <div class="dia_da_semana">
-        <select name="dia_da_semana" id="Dia_da_semana" >
+    <main>
+        <select name="dia_da_semana" id="Dia_da_semana" class="input_dia">
+            <option value="">Dia da Semana</option>
             <option value="Segunda">Segunda</option>
             <option value="Terça">Terça</option>
             <option value="Quarta">Quarta</option>
@@ -24,23 +26,15 @@
             <option value="Sábado">Sábado</option>
             <option value="Domingo">Domingo</option>
         </select>
-    </div>
-    
-
-    <div id="Container_Tasks"></div>
-
-    
-
-    <div class="buttons_tarefas">
-        <a href="/novaTaks"><button class="myButton">Adicionar Tarefa</button></a>
-        <a href="/administrate"><button class="myButton">Voltar</button></a>
-    </div>
-
+        <div id="Container" class="container_tasks"></div>
+        <a href="/breakUser"><button class="bt_sair">Sair</button></a>
+    </main>
     <footer>
         <div>
             <p>Agillité Services 2023</p>
         </div>
     </footer>
-    <script src="../public/scripts/tarefasHomeAdmin.js" type="text/javascript" charset="UTF-8"></script>
+
+    <script src="../public/scripts/userHome.js" type="text/javascript"></script>
 </body>
 </html>

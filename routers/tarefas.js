@@ -14,6 +14,7 @@ router.get('/tarefaUser/:id', tarefasController.detalhesTarefaUser)
 router.post('/novaTarefa', tarefasController.adicionarTarefa)
 router.post('/atualizarTarefa/:id', tarefasController.editarTarefa)
 router.post('/atualizarTarefaUser/:id', tarefasController.editarTarefaUser)
+router.post('/atualizarEstado', tarefasController.atualizarEstado)
 router.post('/consultarTarefa/:id', tarefasController.consultarTarefas)
 router.post('/consultarTarefaEspecifica/:id', tarefasController.consultarTarefaEspecifica)
 

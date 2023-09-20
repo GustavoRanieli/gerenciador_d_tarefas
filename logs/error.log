@@ -81,3 +81,14 @@
 2023-09-17 04:05:16 - [31merror[39m - [31mErro ao deletar usuário![39m
 2023-09-17 12:11:17 - [31merror[39m - [31mErro ao se conectar com o banco, Error: Unknown database 'production'[39m
 2023-09-17 12:11:17 - [31merror[39m - [31mErro ao se conectar com o banco, Error: Unknown database 'production'[39m
+2023-09-20 15:52:25 - [31merror[39m - [31mNão existe usuário registrado no cache![39m
+2023-09-20 16:03:33 - [31merror[39m - [31mErro ao inserir registro no banco de dados: Column 'nome_tarefa' cannot be null[39m
+2023-09-20 16:06:11 - [31merror[39m - [31mErro ao inserir registro no banco de dados: Column 'nome_tarefa' cannot be null[39m
+2023-09-20 16:06:24 - [31merror[39m - [31mNão existe usuário registrado no cache![39m
+2023-09-20 16:10:29 - [31merror[39m - [31mErro ao inserir registro no banco de dados: Column 'nome_tarefa' cannot be null[39m
+2023-09-20 16:16:37 - [31merror[39m - [31mErro ao inserir registro no banco de dados: Column 'nome_tarefa' cannot be null[39m
+2023-09-20 16:36:33 - [31merror[39m - [31mNão existe usuário registrado no cache![39m
+2023-09-20 17:33:01 - [31merror[39m - [31mNão existe usuário registrado no cache![39m
+2023-09-20 17:47:39 - [31merror[39m - [31mNão existe usuário registrado no cache![39m
+2023-09-20 17:49:23 - [31merror[39m - [31mNão existe usuário registrado no cache![39m
+2023-09-20 18:32:53 - [31merror[39m - [31mNão existe usuário registrado no cache![39m

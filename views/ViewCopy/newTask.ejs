@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt_Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="IfUser" type="text" style="display: none;" value="<%= idConfirm %>">
+    <form action="/novaTarefa" method="post">
+        <select name="dia" id="Dia_da_semana">
+            <option value="Segunda">Segunda</option>
+            <option value="Terça">Terça</option>
+            <option value="Quarta">Quarta</option>
+            <option value="Quinta">Quinta</option>
+            <option value="Sexta">Sexta</option>
+            <option value="Sábado">Sábado</option>
+            <option value="Domingo">Domingo</option>
+        </select>
+        <input name="nome_tarefa" type="text">
+        <input name="descricao" type="text">
+        <input name="condominio" type="text">
+        <input name="concluido" style="display: none;" type="text">
+        <input name="justificativa" style="display: none;" type="text">
+        <select name="usuario" id="Id_users"></select>
+        <input name="dia_da_tarefa" id="Dia_da_tarefa" style="display: none;"  type="text">
+        <input name="horario_tarefa" id="Horario_tarefa" type="text" style="display: none;">
+        <button type="submit">Criar</button>
+    </form>
+
+    <a href="/tarefas/<%= idUser %>"><button>Voltar</button></a>
+    <script src="../public/scripts/newTask.js" type="text/javascript" charset="UTF-8"></script>
+</body>
+</html>

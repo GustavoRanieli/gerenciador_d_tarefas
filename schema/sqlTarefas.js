@@ -29,8 +29,9 @@ const sqlTarefaDetalhada = 'SELECT * FROM tarefas where id_tarefa = ?'
 const sqlQueryTarefas = 'SELECT * FROM tarefas WHERE id_usuario = ?';
 const sqlQueryTarefasSearch = 'SELECT * FROM tarefas WHERE dia_semana = ? AND id_usuario = ?'
 const sqlInsertTarefa = 'INSERT INTO tarefas (dia_semana, descricao_tarefa, condominio, concluido, justificativa, id_usuario, dia_da_tarefa, hora_da_tarefa, nome_tarefa) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)';
-const sqlUpdateTarefa = 'UPDATE tarefas SET dia_semana = ?, descricao_tarefa = ?, justificativa = ?, concluido = ?, nome_tarefa = ? WHERE id_tarefa = ?';
+const sqlUpdateTarefa = 'UPDATE tarefas SET dia_semana = ?, descricao_tarefa = ?, condominio = ?, concluido = ?, nome_tarefa = ? WHERE id_tarefa = ?';
 const sqlUpdateTarefaUser = 'UPDATE tarefas SET dia_semana = ?, descricao_tarefa = ?, justificativa = ?, concluido = ?, nome_tarefa = ? WHERE id_tarefa = ?';
+const sqlUpdateState = 'UPDATE tarefas SET concluido = ? WHERE id_tarefa = ?'
 const sqlDeleteTarefa = 'DELETE FROM tarefas WHERE id_tarefa = ?';
 
 // Controlador
@@ -113,13 +114,13 @@ const tarefasController = {
 
         let novaTarefa = {
             dia: req.body.dia,
-            justificativa: req.body.justificativa,
+            condominio: req.body.condominio,
             descricao_tarefa: req.body.descricao, 
             concluido: req.body.concluido, 
             nome_tarefa: req.body.nome_tarefa
         }
 
-      connection.query(sqlUpdateTarefa, [novaTarefa.dia, novaTarefa.descricao_tarefa, novaTarefa.justificativa, novaTarefa.concluido, novaTarefa.nome_tarefa, ID], ( err, results ) => {
+      connection.query(sqlUpdateTarefa, [novaTarefa.dia, novaTarefa.descricao_tarefa, novaTarefa.condominio, novaTarefa.concluido, novaTarefa.nome_tarefa, ID], ( err, results ) => {
         if( err ){
           console.log(err)
           logger.error('Erro ao atualizar Tarefa!');
@@ -155,6 +156,22 @@ const tarefasController = {
         }
     })
       // Implementação para editar tarefas pelo Usuário...
+    },
+
+    atualizarEstado: function( req, res ){
+      let concluido = req.body.estado;
+      let id = req.body.id;
+
+      connection.query(sqlUpdateState, [ concluido, id], ( err, results ) => {
+        if( err ){
+          console.log(err)
+          logger.error('Erro ao atualizar Tarefa!');
+          res.status(500).send('Erro ao Atualizar!')
+        }else{
+          logger.info('Tarefa Atualizada com sucesso!')
+          res.status(200).redirect(`/paginainicial`)
+        }
+      })
     },
 
     deletarTarefa: function (req, res) {

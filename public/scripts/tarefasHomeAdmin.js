@@ -1,6 +1,7 @@
 let idUser;
 let url;
 let urlDia;
+let Bt_delet;
 
 // Puxando o id do usuário para consulta
 document.addEventListener('DOMContentLoaded', async () => {
@@ -51,25 +52,45 @@ const config = {
             return response.json();
         })
         .then( data => {
-            data.forEach(element => {
-                container.innerHTML += `
-                    <div>
-                        <div>
-                            <a href="/tarefa/${element.id_tarefa}"><h1>${element.nome_tarefa}</h1></a>
+            container.innerHTML = ""
+            if(data.length == 0){
+                container.innerHTML = `<h1>Usuário não tem tarefa</h1>`
+            }else{
+                data.forEach(element => {
+                    container.innerHTML += `
+                        <div class="div_tarefas">
+                            <div class="div_tarefas_diaSeman">
+                                <a href="/tarefa/${element.id_tarefa}"><p>${element.nome_tarefa}</p></a>
+                            </div>
+                            <div>
+                                <p>${element.dia_semana}</p>
+                            </div>
+                            <div>
+                                <p>${element.condominio}</p>
+                            </div>
+                            <div>
+                                <p>Feita: ${element.concluido == 1 ? "✔️" : "❌"}</p>
+                            </div>
+                            <div>
+                                <a href="/editTask/${element.id_tarefa}" href=""><button>Editar</button></a>
+                                <button id="Bt_delete" id_task="${element.id_tarefa}">Deletar</button>
+                            </div>
                         </div>
-                        <div>
-                            <h1>${element.dia_semana}</h1>
-                        </div>
-                        <div>
-                            <h1>${element.condominio}</h1>
-                        </div>
-                        <div>
-                            <a href="/editTask/${element.id_tarefa}" href=""><button>Editar</button></a>
-                            <a href="/deleteTarefa/${element.id_tarefa}"><button>Deletar</button></a>
-                        </div>
-                    </div>
-                `
-            })
+                    `
+                })
+                Bt_delet = document.querySelectorAll('#Bt_delete');
+                Bt_delet.forEach(botão => {
+                    botão.addEventListener('click', () => {
+                        let id = botão.getAttribute('id_task')
+                        let confirmacao = confirm('Deseja excluir tarefa?')
+                        if(confirmacao){
+                            window.location.href = `/deleteTarefa/${id}`
+                        }else{
+                            console.log('Tarefa não deletada!')
+                        }
+                    })
+                });
+            }
         })
         .catch( err => {
             console.log(`Erro ao consultar url cache:  ${ err }`)
@@ -100,29 +121,46 @@ const config = {
         })
         .then( data => {
             container.innerHTML = ""
-
-            data.forEach(element => {
-                container.innerHTML += `
-                    <div>
-                        <div>
-                            <h1>${element.nome_tarefa}</h1>
+            if(data.length == 0){
+                container.innerHTML = `<h1>Usuário não tem tarefa</h1>`
+            }else{
+                data.forEach(element => {
+                    container.innerHTML += `
+                        <div class="div_tarefas">
+                            <div class="div_tarefas_diaSeman">
+                                <a href="/tarefa/${element.id_tarefa}"><p>${element.nome_tarefa}</p></a>
+                            </div>
+                            <div>
+                                <p>${element.dia_semana}</p>
+                            </div>
+                            <div>
+                                <p>${element.condominio}</p>
+                            </div>
+                            <div>
+                                <p>Feita: ${element.concluido == 1 ? "✔️" : "❌"}</p>
+                            </div>
+                            <div>
+                                <a href="/editTask/${element.id_tarefa}" href=""><button>Editar</button></a>
+                                <button id="Bt_delete" id_task="${element.id_tarefa}">Deletar</button>
+                            </div>
                         </div>
-                        <div>
-                            <h1>${element.dia_semana}</h1>
-                        </div>
-                        <div>
-                            <h1>${element.condominio}</h1>
-                        </div>
-                        <div>
-                            <a href="/editTask/${element.id_tarefa}" href=""><button>Editar</button></a>
-                            <a href="/deleteTarefa/${element.id_tarefa}"><button>Deletar</button></a>
-                        </div>
-                    </div>
-                `
-            })
+                    `
+                })
+                Bt_delet = document.querySelectorAll('#Bt_delete');
+                Bt_delet.forEach(botão => {
+                    botão.addEventListener('click', () => {
+                        let id = botão.getAttribute('id_task')
+                        let confirmacao = confirm('Deseja excluir tarefa?')
+                        if(confirmacao){
+                            window.location.href = `/deleteTarefa/${id}`
+                        }else{
+                            console.log('Tarefa não deletada!')
+                        }
+                    })
+                });
+            }
         })
         .catch( err => {
             console.log(`Erro ao consultar url cache:  ${ err }`)
         })
  }
-

@@ -23,65 +23,60 @@ body{
     text-align: center;
     color: white;
     font-family: 'Montserrat';
-    font-size: 0.8em;
+    font-size: 1.2em;
     margin-bottom: 5%;
 }
 
-.input_dia{
+.container_editTask{
     margin: 0% 6%;
-    width: 88vw;
-    height: 5em;
-    font-family: 'Montserrat';
-    font-weight: 700;
-    text-align: center;
-    font-size: 1em;
-    border: 5px solid #FFFF00;
-    border-radius: 10px;
-}
-.container_tasks{
-    background-color: rgb(252, 252, 252);
-    margin-left: 6%;
-    margin-right: 6%;
-}
-
-.container_individualTask{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-around;
-    padding: 2%;
-    border: 1px solid #000;
     font-family: 'Montserrat';
     font-weight: 700;
+    color: white;
 }
 
-.container_individualTask div{
-    margin: 0% 2%;
-    text-align: center;
+.container_editTask div{
+    margin: 2% 0%;
+    width: 70%;
 }
 
-.container_individualTask h1{
-    color: #000;
-    font-size: 1.5em;
-}
-
-.bt_sair{
-    font-family: 'Montserrat';
-    font-weight: 700;
-    font-size: 1em;
-    color: #000;
-    padding: 2%;
-    background-color: #800;
-    border-radius: 10px;
-    margin-left: 6%;
+.div_buttons{
     margin-top: 2%;
-    cursor: pointer;
-    border: transparent;
-    border-radius: 5px;
 }
 
-.Checked{
-    background-color: green !important;
+.descricao label{
+    vertical-align: 20px;
+}
+
+.descricao textarea{
+    width: 100%;
+    height: 30vw;
+}
+
+.container_editTask input, select, option, textarea{
+    padding: 2%;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    margin-left: 1.5%;
+}
+
+.container_bts button{
+    padding: 4%;
+    border: transparent;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    color: #000;
+}
+
+.voltar{
+    background-color: #800;
+}
+.submit{
+    background-color: green;
 }
 
 /* Estilos do footer */
@@ -95,4 +90,3 @@ footer {
     font-family: 'Montserrat';
     font-weight: 700;
 }
-

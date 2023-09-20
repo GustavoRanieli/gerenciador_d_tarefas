@@ -4,8 +4,12 @@
 const urlId = "http://localhost:3000/userIdent";
 const container = document.querySelector('#Container');
 const dia_da_semana = document.querySelector('#Dia_da_semana');
+const urlEstado = 'http://localhost:3000/atualizarEstado'
 let idUser;
 let urlDia;
+let inputComplete;
+let inputNoComplete;
+
 
 document.addEventListener("DOMContentLoaded", () => {
         consultarId()
@@ -55,21 +59,55 @@ async function consultarTasks(id){
                         container.innerHTML = ""
 
                         data.forEach( element => {
-                                container.innerHTML += `
-                                <form action="/atualizarTarefaUser/${element.id_tarefa}" method="post" enctype="application/x-www-form-urlencoded"">
-                                        <div class="container_individualTask">
-                                                <div>
-                                                        <a href="/tarefaUser/${element.id_tarefa}"><h1>${element.nome_tarefa}</h1></a>
-                                                        <input type="text" name="nome_tarefa" value="${element.nome_tarefa}" style="display: none">
+                                if(element.concluido == 1){
+                                        container.innerHTML += `
+                                        <form action="/atualizarTarefaUser/${element.id_tarefa}" method="post" enctype="application/x-www-form-urlencoded"">
+                                                <div class="container_individualTask">
+                                                        <div>
+                                                                <a href="/tarefaUser/${element.id_tarefa}"><h1>${element.nome_tarefa}</h1></a>
+                                                                <input type="text" name="nome_tarefa" value="${element.nome_tarefa}" style="display: none">
+                                                        </div>
+        
+                                                        <div id="Dia">
+                                                                <h1>${element.dia_semana}</h1>
+                                                                <input type="text"  value="${element.dia_semana}" name="dia" style="display: none">         
+                                                        </div>
+                                                        <div id="Cheked">
+                                                                <input type="radio" name="concluido" value="1" id="Concluido"  id_task="${element.id_tarefa}" checked>
+                                                                <label for="Concluido">✔️</label>
+                                                                <input type="radio" name="concluido" value="0" id="Incompleto" id_task="${element.id_tarefa}">
+                                                                <label for="Incompleto">❌</label>  
+                                                        </div>
                                                 </div>
-
-                                                <div id="Dia">
-                                                        <h1>${element.dia_semana}</h1>
-                                                        <input type="text"  value="${element.dia_semana}" name="dia" style="display: none">         
+                                                <button style="display: none" type="submit" id="Submit"></button>
+                                        </form>`
+                                }else{
+                                        container.innerHTML += `
+                                        <form action="/atualizarTarefaUser/${element.id_tarefa}" method="post" enctype="application/x-www-form-urlencoded"">
+                                                <div class="container_individualTask">
+                                                        <div>
+                                                                <a href="/tarefaUser/${element.id_tarefa}"><h1>${element.nome_tarefa}</h1></a>
+                                                                <input type="text" name="nome_tarefa" value="${element.nome_tarefa}" style="display: none">
+                                                        </div>
+        
+                                                        <div id="Dia">
+                                                                <h1>${element.dia_semana}</h1>
+                                                                <input type="text"  value="${element.dia_semana}" name="dia" style="display: none">         
+                                                        </div>
+                                                        <div id="Cheked">
+                                                                <input type="radio" name="concluido" value="1" id="Concluido" id_task="${element.id_tarefa}">
+                                                                <label for="Concluido">✔️</label>
+                                                                <input type="radio" name="concluido" value="0" id="Incompleto" id_task="${element.id_tarefa}" checked>
+                                                                <label for="Incompleto">❌</label>  
+                                                        </div>
                                                 </div>
-                                        </div>
-                                </form>`
-                        })
+                                                <button style="display: none" type="submit" id="Submit"></button>
+                                        </form>`
+                                };    
+                        });
+                        inputComplete = document.querySelectorAll('#Concluido')
+                        inputNoComplete = document.querySelectorAll('#Incompleto')
+                        checkInputs()
                 })
                 .catch( err => {
                         console.log( err );
@@ -102,40 +140,101 @@ async function consultarTarefasPesquisa(id, dia_semana){
             .then( data => {
                 container.innerHTML = ""
     
-                data.forEach(element => {
-                        container.innerHTML += `
-                        <form action="/atualizarTarefaUser/${element.id_tarefa}" method="post" enctype="application/x-www-form-urlencoded"">
-                                <div class="container_individualTask">
-                                        <div>
-                                                <a href="/tarefa/${element.id_tarefa}"><h1>${element.nome_tarefa}</h1></a>
-                                                <input type="text" name="nome_tarefa" value="${element.nome_tarefa}" style="display: none">
-                                        </div>
+                data.forEach( element => {
+                        if(element.concluido == 1){
+                                container.innerHTML += `
+                                <form action="/atualizarTarefaUser/${element.id_tarefa}" method="post" enctype="application/x-www-form-urlencoded"">
+                                        <div class="container_individualTask">
+                                                <div>
+                                                        <a href="/tarefaUser/${element.id_tarefa}"><h1>${element.nome_tarefa}</h1></a>
+                                                        <input type="text" name="nome_tarefa" value="${element.nome_tarefa}" style="display: none">
+                                                </div>
 
-                                        <div id="Dia">
-                                                <h1>${element.dia_semana}</h1>
-                                                <input type="text"  value="${element.dia_semana}" name="dia" style="display: none">         
+                                                <div id="Dia">
+                                                        <h1>${element.dia_semana}</h1>
+                                                        <input type="text"  value="${element.dia_semana}" name="dia" style="display: none">         
+                                                </div>
+                                                <div id="Cheked">
+                                                        <input type="radio" name="concluido" value="1" id="Concluido"  id_task="${element.id_tarefa}" checked>
+                                                        <label for="Concluido">✔️</label>
+                                                        <input type="radio" name="concluido" value="0" id="Incompleto" id_task="${element.id_tarefa}">
+                                                        <label for="Incompleto">❌</label>  
+                                                </div>
                                         </div>
-                                </div>
-                        </form>`
-                })
+                                        <button style="display: none" type="submit" id="Submit"></button>
+                                </form>`
+                        }else{
+                                container.innerHTML += `
+                                <form action="/atualizarTarefaUser/${element.id_tarefa}" method="post" enctype="application/x-www-form-urlencoded"">
+                                        <div class="container_individualTask">
+                                                <div>
+                                                        <a href="/tarefaUser/${element.id_tarefa}"><h1>${element.nome_tarefa}</h1></a>
+                                                        <input type="text" name="nome_tarefa" value="${element.nome_tarefa}" style="display: none">
+                                                </div>
+
+                                                <div id="Dia">
+                                                        <h1>${element.dia_semana}</h1>
+                                                        <input type="text"  value="${element.dia_semana}" name="dia" style="display: none">         
+                                                </div>
+                                                <div id="Cheked">
+                                                        <input type="radio" name="concluido" value="1" id="Concluido" id_task="${element.id_tarefa}">
+                                                        <label for="Concluido">✔️</label>
+                                                        <input type="radio" name="concluido" value="0" id="Incompleto" id_task="${element.id_tarefa}" checked>
+                                                        <label for="Incompleto">❌</label>  
+                                                </div>
+                                        </div>
+                                        <button style="display: none" type="submit" id="Submit"></button>
+                                </form>`
+                        };    
+                });
+                inputComplete = document.querySelectorAll('#Concluido')
+                inputNoComplete = document.querySelectorAll('#Incompleto')
+                checkInputs()
             })
             .catch( err => {
                 console.log(`Erro ao consultar url cache:  ${ err }`)
             })
      }
 
-//      <div id="Justificativa" name="justificativa">
-//      <label>Justificar:<br>
-//      <textarea name="justificativa"></textarea></label>
-// </div>
+ function checkInputs(){
+        inputComplete.forEach( input => {
+                if(input.checked){
+                        let container = input.parentNode.parentNode
+                        container.classList.add('Checked')
+                }
+                input.addEventListener('change', (e) => {
+                        let container = e.target.parentNode.parentNode
+                        container.classList.add('Checked')
+                        id = e.target.getAttribute('id_task')
+                        atualizarEstado(id, 1)
+                })
+        })
 
-// <div id="Condicao">
-//      <select name="concluido">
-//              <option value="0">Incompleto</option>
-//              <option value="1">Completo</option>
-//      </select>
-// </div>
+        inputNoComplete.forEach( input => {
+                input.addEventListener('change', (e) => {
+                        let container = e.target.parentNode.parentNode
+                        container.classList.remove('Checked')
+                        id = e.target.getAttribute('id_task')
+                        atualizarEstado(id, 0)
+                })
+        })
+}
 
-// <div id="BtSubmit">
-//      <button type="submit">Enviar</button>
-// </div>
+function atualizarEstado(idTask, condicao){
+        const fetchBody = new URLSearchParams
+        fetchBody.append('estado', condicao);
+        fetchBody.append('id', idTask);
+
+
+        const configFetch = {
+                method: "POST",
+                headers: {
+                        'Content-Type': 'application/x-www-form-urlencoded'
+                },
+                body: fetchBody
+        }
+
+        fetch(urlEstado, configFetch)
+}
+
+

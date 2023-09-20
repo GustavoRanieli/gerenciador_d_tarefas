@@ -62,8 +62,9 @@ app.get('/editUser/:id', ( req, res ) => {
 })
 
 app.get('/editTask/:id', ( req, res ) => {
+    let id_user = cache.get('id_user_para_consultar_tarefas')
     let id_taks = req.params.id
-    res.render('editTask', { id_taks })
+    res.render('editTask', { id_taks, id_user })
 })
 
 // Atribuindo Rotas existentes

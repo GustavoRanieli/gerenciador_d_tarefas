@@ -80,10 +80,6 @@ body{
     border-radius: 5px;
 }
 
-.Checked{
-    background-color: green !important;
-}
-
 /* Estilos do footer */
 footer {
     margin-top: 5%;

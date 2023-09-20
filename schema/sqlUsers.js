@@ -43,15 +43,35 @@ const sqlControlerUser = {
             idade: req.body.idade
         }
 
-        connection.query(sqlInsert, [usuario.id, usuario.nome, usuario.senha, usuario.funcao, usuario.cpf, usuario.idade], (err, result) => {
-            if (err) {
-              logger.error('Erro ao inserir registro no banco de dados:', err);
-              res.status(500).send('Erro')
+        connection.query(sqlSelect + 'cpf = ?', [usuario.cpf], ( err, result ) => {
+          if(err){
+            logger.error('Erro ao consultar se o usuário já existe', err);
+          }else{
+            if(result.length == 0){
+                connection.query(sqlInsert, [usuario.id, usuario.nome, usuario.senha, usuario.funcao, usuario.cpf, usuario.idade], (err, result) => {
+                  if (err) {
+                    logger.error('Erro ao inserir registro no banco de dados:', err);
+                    res.status(500).send('Erro')
+                  }else{
+                    logger.info('Registro inserido com sucesso. ID:', result);
+                    res.status(200).redirect('administrate')
+                  }
+                });
             }else{
-              logger.info('Registro inserido com sucesso. ID:', result);
-              res.status(200).send('Usuário Cadastrado!')
+              return res.status(401)
             }
-          });
+          }
+        })
+
+        // connection.query(sqlInsert, [usuario.id, usuario.nome, usuario.senha, usuario.funcao, usuario.cpf, usuario.idade], (err, result) => {
+        //     if (err) {
+        //       logger.error('Erro ao inserir registro no banco de dados:', err);
+        //       res.status(500).send('Erro')
+        //     }else{
+        //       logger.info('Registro inserido com sucesso. ID:', result);
+        //       res.status(200).send('Usuário Cadastrado!')
+        //     }
+        //   });
           // Implementação para Adicionar...
     },
 

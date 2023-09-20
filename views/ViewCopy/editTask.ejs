@@ -37,14 +37,16 @@
                         </select>
                     </label>
                 </div>
-                <div class="descricao">
-                    <label>Descrição:</label>
+                <div>
+                    <label class="descricao">Descrição:</label>
                         <textarea name="descricao" type="text" required></textarea>
                 </div>
-                <div style="display: none;">
+                <div>
                     <label>Estado:
-                        <select name="concluido">
-                            <option value="0" selected>Não concluido</option>
+                        <select name="concluido" required>
+                            <option> </option>
+                            <option value="1">Concluido</option>
+                            <option value="0">Não concluido</option>
                         </select>
                     </label>
                 </div>
@@ -54,7 +56,7 @@
                     </label>
                 </div>
                 <div class="container_bts">
-                    <a href="/tarefas/<%= id_user %>"><button type="button" class="voltar">Voltar</button></a>
+                    <a href=""><button class="voltar">Voltar</button></a>
                     <button class="submit" type="submit">Enviar</button>
                 </div>
             </div>
