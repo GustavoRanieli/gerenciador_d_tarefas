@@ -15,46 +15,64 @@
                 <h2><%= tarefa.nome_tarefa %></h2>
             </div>
         </article>
-        <div>
-            <div class="container_tasks">
-                <div>
-                    <label>Descrição:‎ ‎ 
-                        <input type="text" value="<%= tarefa.descricao_tarefa %>">
-                    </label>
-                </div>
-                <div>
-                    <label>Condominio:‎ ‎ 
-                        <input type="text" value="<%= tarefa.condominio %>">
-                    </label>
-                </div>
-                <div>
-                    <label>Estado: ‎ ‎ 
-                        <select>
-                            <option <%= tarefa.concluido === 1 ? 'selected' : '' %> value="Concluido">Concluido</option>
-                            <option <%= tarefa.concluido === 0 ? 'selected' : '' %> value="Incompleto">Incompleto</option>
+        
+            <div class="container_editTask">
+                <div class="form_NewTask">
+                    <div class="form-row">
+                        <label for="nome_tarefa" class="form-label">Selecione o dia da semana:</label>
+                        <select name="dia" id="Dia_da_semana" class="form-input">
+                            <option value="Segunda">Segunda</option>
+                            <option value="Terça">Terça</option>
+                            <option value="Quarta">Quarta</option>
+                            <option value="Quinta">Quinta</option>
+                            <option value="Sexta">Sexta</option>
+                            <option value="Sábado">Sábado</option>
+                            <option value="Domingo">Domingo</option>
                         </select>
-                    </label>
+                    </div>
+        
+                    <div class="form-row">
+                        <label for="nome_tarefa" class="form-label">Nome da Tarefa</label>
+                        <input name="nome_tarefa" type="text" class="form-input" value="<%= tarefa.nome_tarefa %>" disabled>
+                    </div>
+        
+                    <div class="form-row">
+                        <label for="descricao" class="form-label">Descrição da Tarefa</label>
+        
+                        <textarea name="descricao" id="" cols="30" rows="10" class="form-input" disabled></textarea>
+                    </div>
+        
+                    <div class="form-row">
+                        <label for="condominio" class="form-label">Nome do condominio</label>
+                        <input name="condominio" type="text" class="form-input" value="<%= tarefa.condominio %>" disabled>
+                    </div>
+        
+                    <div class="form-row" style="display: none;">
+                        <label for="condominio" class="form-label">Tarefa concluida</label>
+                        <input name="concluido" style="display: none;" type="text" class="form-input" disabled>
+                    </div>
+        
+                    <div class="form-row" style="display: none;">
+                        <label for="justificativa" class="form-label">Justificativa?</label>
+                        <input name="justificativa" style="display: none;" type="text" class="form-input" disabled>
+                    </div>
+        
+                    <div class="form-row" style="display: none;">
+                        <label for="justificativa" class="form-label">Selecione o dia?</label>
+                        <input name="dia_da_tarefa" id="Dia_da_tarefa" style="display: none;" type="text" class="form-input" disabled>
+                    </div>
+        
+                    <div class="form-row" style="display: none;">
+                        <label for="justificativa" class="form-label">Informe o horário:</label>
+                        <input name="horario_tarefa" id="Horario_tarefa" type="text" style="display: none;" class="form-input">
+                    </div>
                 </div>
-                <div>
-                    <label>Justificativa:‎ ‎ 
-                        <input type="text" name="" value="<%= tarefa.justifica %>">
-                    </label>
-                </div>
-                <div>
-                    <label>Hora criada:‎ ‎ 
-                        <input type="text" value="<%= tarefa.hora_da_tarefa %>">
-                    </label>
-                </div>
-                <div>
-                    <label>Data de criação:‎ ‎ 
-                        <input type="text" value="<%= tarefa.dia_da_tarefa %>">
-                    </label>
-                </div>
-                <div class="div_buttons">
-                    <a href="/tarefas/<%= tarefa.id_usuario %>"><button class="bt_voltar">Voltar</button></a>
+                <div class="form-row-button">
+                    <a href="/tarefas/<%= tarefa.id_usuario %>"><button class="myButton">Voltar</button></a>
                 </div>
             </div>
-        </div>
+
+
     </main>
 </body>
 </html>

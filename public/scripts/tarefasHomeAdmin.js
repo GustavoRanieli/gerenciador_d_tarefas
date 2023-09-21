@@ -5,7 +5,7 @@ let Bt_delet;
 
 // Puxando o id do usuário para consulta
 document.addEventListener('DOMContentLoaded', async () => {
-   await fetch('http://localhost:3000/userTaksIdent')
+   await fetch('http://192.168.15.25:3000/userTaksIdent')
         .then(response => {
             if(!response){
                 console.log('Falha ao puxar Id, Id vazio')
@@ -14,8 +14,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         })
         .then(data => {
             idUser = data;
-            url = `http://localhost:3000/consultarTarefa/${idUser}`
-            urlDia = `http://localhost:3000/consultarTarefaEspecifica/${idUser}`
+            url = `http://192.168.15.25:3000/consultarTarefa/${idUser}`
+            urlDia = `http://192.168.15.25:3000/consultarTarefaEspecifica/${idUser}`
             consultarTarefas()
         })
         .catch(err => {
@@ -54,7 +54,7 @@ const config = {
         .then( data => {
             container.innerHTML = ""
             if(data.length == 0){
-                container.innerHTML = `<h1>Usuário não tem tarefa</h1>`
+                container.innerHTML = `<p>Usuário não possui tarefas: Adicione novas tarefas</p>`
             }else{
                 data.forEach(element => {
                     container.innerHTML += `
@@ -122,7 +122,7 @@ const config = {
         .then( data => {
             container.innerHTML = ""
             if(data.length == 0){
-                container.innerHTML = `<h1>Usuário não tem tarefa</h1>`
+                container.innerHTML = `<P>Usuário não possui tarefas: Adicione novas tarefas</P>`
             }else{
                 data.forEach(element => {
                     container.innerHTML += `

@@ -9,41 +9,44 @@
 <body>
     <header></header>
     <main>
-
         <img class="logo_painel_admin" src="../public/image/Logo.png" alt="logo da empresa">
         <article>
             <div class="subtitulo_painel_admin">
-                <h1>Tarefa: <%= tarefa.nome_tarefa %></h1>
+                <h1>Nome da Tarefa: <%= tarefa.nome_tarefa %></h1>
             </div>
         </article>
-                <div class="container_tasks">
-                <input type="text" value="<%= tarefa.nome_tarefa %>" name="nome_tarefa" style="display: none;">
-                    <div>
-                        <h3>Descrição: <%= tarefa.descricao_tarefa %></h3>
-                        <input type="text" name="descricao" value="<%= tarefa.descricao_tarefa %>" style="display: none;">
+       
+
+        <form action="" method="post" enctype="application/x-www-form-urlencoded">
+            <div class="container_editTask">
+                <div class="form_NewTask">
+                    
+                    <div class="form-row">
+                        <label for="nome_tarefa" class="form-label">Dia da semana</label>
+                        <input name="nome_tarefa" type="text" class="form-input"  value="<%= tarefa.dia_semana %>" disabled>
                     </div>
-                    <div>
-                        <h3>Dia da semana: <%= tarefa.dia_semana %></h3>
-                        <input type="text" name="dia" value="<%= tarefa.dia_semana %>" style="display: none;">
+        
+                    <div class="form-row">
+                        <label for="nome_tarefa" class="form-label">Nome da Tarefa</label>
+                        <input name="nome_tarefa" type="text" class="form-input" value="<%= tarefa.nome_tarefa %>" disabled>
                     </div>
-                    <div>
-                        <h3>Condominio: <%= tarefa.condominio %></h3>
-                        <input type="text" value="<%= tarefa.condominio %>" style="display: none;">
+        
+                    <div class="form-row">
+                        <label for="descricao" class="form-label">Descrição da Tarefa</label>
+        
+                        <textarea name="descricao" id="" cols="30" rows="10" class="form-input" disabled><%= tarefa.descricao_tarefa %></textarea>
                     </div>
-                    <div>
-                        <label>Hora criada: ‎ ‎  
-                            <input type="text" value="<%= tarefa.hora_da_tarefa %>">
-                        </label>
+        
+                    <div class="form-row">
+                        <label for="condominio" class="form-label">Nome do condominio</label>
+                        <input name="condominio" type="text" class="form-input" value="<%= tarefa.condominio %>" disabled>
                     </div>
-                    <div>
-                        <label>Data de criação: ‎ ‎  
-                            <input type="text"value="<%= tarefa.dia_da_tarefa %>">
-                        </label>
-                    </div>
-                <div class="div_buttons">
-                    <a class="link_voltar" href="/paginainicial"><button class="bt_voltar">Voltar</button></a>
+                </div>
+                <div class="form-row-button">
+                    <a href="/paginainicial"><button type="button" class="myButton">Voltar</button></a>
                 </div>
             </div>
+        </form>
     </main>
     <footer>
         <div>

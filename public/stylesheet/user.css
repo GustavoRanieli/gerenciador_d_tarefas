@@ -8,6 +8,8 @@
 body{
     background-image: url(../image/background.svg);
     background-size: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
     margin: 0;
     padding: 0;
     min-height: 100vh; /* Isso é importante para que o footer fique na parte inferior da página */
@@ -28,41 +30,82 @@ body{
 }
 
 .input_dia{
-    margin: 0% 6%;
-    width: 88vw;
-    height: 5em;
-    font-family: 'Montserrat';
-    font-weight: 700;
-    text-align: center;
-    font-size: 1em;
-    border: 5px solid #FFFF00;
-    border-radius: 10px;
+    width: 88%;
+        margin-left: 6%;
+        margin-top: 10%;
+        margin-bottom: 5%;
+        padding: 1%;
 }
-.container_tasks{
+
+.section_user {
     background-color: rgb(252, 252, 252);
     margin-left: 6%;
-    margin-right: 6%;
+    margin-right: 4%;
+}
+
+
+.container_tasks{
+    background-color: white;
+    max-height: 250px;
+    margin: 0 auto;
+    overflow-y: scroll;
+    margin-bottom: 5%;
 }
 
 .container_individualTask{
-    display: flex;
+display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
-    padding: 2%;
+    justify-content: space-between;
     border: 1px solid #000;
-    font-family: 'Montserrat';
-    font-weight: 700;
+    padding: 2% 0%;
 }
 
 .container_individualTask div{
     margin: 0% 2%;
-    text-align: center;
+    
 }
 
-.container_individualTask h1{
+.container_individualTask p{
     color: #000;
-    font-size: 1.5em;
+    font-size: 0.7em;
+    font-family: 'Montserrat';
+    font-weight: 700;
+}
+
+.section_dados {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15%;
+}
+
+.myButton {
+    box-shadow: 0px 1px 0px 0px #fff6af;
+    background: linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
+    background-color: #ffec64;
+    border-radius: 23px;
+    border: 1px solid #ffaa22;
+    display: inline-block;
+    cursor: pointer;
+    color: #333333;
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px 80px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #ffee66;
+    text-transform: uppercase;
+}
+
+.myButton:hover {
+    background: linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
+    background-color: #ffab23;
+}
+
+.myButton:active {
+    position: relative;
+    top: 1px;
 }
 
 .bt_sair{

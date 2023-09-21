@@ -2282,3 +2282,517 @@
 2023-09-20 19:56:21 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
 2023-09-20 19:56:43 - [32minfo[39m - [32mRegistro inserido com sucesso. ID:[39m
 2023-09-20 19:56:52 - [32minfo[39m - [32mUsuário deletado com sucesso![39m
+2023-09-21 09:02:21 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-21 09:02:21 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 09:02:21 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 09:05:40 - [32minfo[39m - [32mRegistro inserido com sucesso. ID:[39m
+2023-09-21 09:06:16 - [32minfo[39m - [32mTarefa deletado com sucesso![39m
+2023-09-21 09:06:43 - [32minfo[39m - [32mUsuário Atualizado com sucesso![39m
+2023-09-21 09:07:02 - [32minfo[39m - [32mRegistro inserido com sucesso. ID:[39m
+2023-09-21 09:07:35 - [32minfo[39m - [32mUsuário deletado com sucesso![39m
+2023-09-21 09:08:15 - [32minfo[39m - [32mTarefa Atualizada com sucesso![39m
+2023-09-21 09:08:16 - [32minfo[39m - [32mTarefa Atualizada com sucesso![39m
+2023-09-21 09:08:17 - [32minfo[39m - [32mTarefa Atualizada com sucesso![39m
+2023-09-21 09:08:25 - [32minfo[39m - [32mTarefa Atualizada com sucesso![39m
+2023-09-21 09:08:27 - [32minfo[39m - [32mTarefa Atualizada com sucesso![39m
+2023-09-21 09:09:08 - [32minfo[39m - [32mTarefa Atualizada com sucesso![39m
+2023-09-21 09:17:10 - [32minfo[39m - [32mRegistro inserido com sucesso. ID:[39m
+2023-09-21 09:33:18 - [32minfo[39m - [32mRegistro inserido com sucesso. ID:[39m
+2023-09-21 10:04:27 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-21 10:04:27 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 10:04:27 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 10:04:31 - [31merror[39m - [31mNão existe usuário registrado no cache![39m
+2023-09-21 10:21:59 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-21 10:21:59 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 10:21:59 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 10:22:00 - [31merror[39m - [31mNão existe usuário registrado no cache![39m
+2023-09-21 10:22:03 - [31merror[39m - [31mNão existe usuário registrado no cache![39m
+2023-09-21 10:23:18 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-21 10:23:18 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 10:23:18 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 10:23:22 - [31merror[39m - [31mNão existe usuário registrado no cache![39m
+2023-09-21 10:33:50 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-21 10:33:50 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 10:33:50 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 10:33:54 - [31merror[39m - [31mNão existe usuário registrado no cache![39m
+2023-09-21 10:35:19 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-21 10:35:19 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 10:35:19 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 10:35:22 - [31merror[39m - [31mNão existe usuário registrado no cache![39m
+2023-09-21 10:38:59 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-21 10:38:59 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 10:38:59 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 10:39:01 - [31merror[39m - [31mNão existe usuário registrado no cache![39m
+2023-09-21 10:39:53 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-21 10:39:53 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 10:39:53 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 10:39:55 - [31merror[39m - [31mNão existe usuário registrado no cache![39m
+2023-09-21 10:43:11 - [32minfo[39m - [32mUsuário Atualizado com sucesso![39m
+2023-09-21 10:45:10 - [32minfo[39m - [32mUsuário Atualizado com sucesso![39m
+2023-09-21 10:45:55 - [31merror[39m - [31mErro ao deletar usuário![39m
+2023-09-21 10:45:59 - [31merror[39m - [31mErro ao deletar usuário![39m
+2023-09-21 10:46:16 - [31merror[39m - [31mErro ao deletar usuário![39m
+2023-09-21 10:46:42 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-21 10:46:42 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 10:46:42 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 10:46:53 - [31merror[39m - [31mErro ao deletar usuário![39m
+2023-09-21 10:47:38 - [31merror[39m - [31mErro ao deletar usuário![39m
+2023-09-21 10:48:54 - [32minfo[39m - [32mRegistro inserido com sucesso. ID:[39m
+2023-09-21 10:49:00 - [32minfo[39m - [32mUsuário deletado com sucesso![39m
+2023-09-21 10:51:00 - [32minfo[39m - [32mUsuário deletado com sucesso![39m
+2023-09-21 10:51:12 - [32minfo[39m - [32mUsuário Atualizado com sucesso![39m
+2023-09-21 10:52:18 - [32minfo[39m - [32mUsuário Atualizado com sucesso![39m
+2023-09-21 10:53:12 - [32minfo[39m - [32mRegistro inserido com sucesso. ID:[39m
+2023-09-21 10:53:32 - [32minfo[39m - [32mUsuário Atualizado com sucesso![39m
+2023-09-21 10:54:11 - [32minfo[39m - [32mRegistro inserido com sucesso. ID:[39m
+2023-09-21 10:54:47 - [32minfo[39m - [32mRegistro inserido com sucesso. ID:[39m
+2023-09-21 10:55:05 - [32minfo[39m - [32mRegistro inserido com sucesso. ID:[39m
+2023-09-21 10:59:07 - [32minfo[39m - [32mUsuário deletado com sucesso![39m
+2023-09-21 11:02:43 - [32minfo[39m - [32mUsuário deletado com sucesso![39m
+2023-09-21 11:02:54 - [32minfo[39m - [32mUsuário Atualizado com sucesso![39m
+2023-09-21 11:03:46 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-21 11:03:46 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 11:03:46 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 11:07:42 - [32minfo[39m - [32mUsuário deletado com sucesso![39m
+2023-09-21 11:10:33 - [32minfo[39m - [32mUsuário Atualizado com sucesso![39m
+2023-09-21 11:12:54 - [32minfo[39m - [32mUsuário Atualizado com sucesso![39m
+2023-09-21 11:13:08 - [32minfo[39m - [32mUsuário Atualizado com sucesso![39m
+2023-09-21 11:13:14 - [32minfo[39m - [32mUsuário Atualizado com sucesso![39m
+2023-09-21 11:13:19 - [32minfo[39m - [32mUsuário deletado com sucesso![39m
+2023-09-21 11:13:52 - [32minfo[39m - [32mTarefa deletado com sucesso![39m
+2023-09-21 11:17:29 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-21 11:17:30 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 11:17:30 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 11:18:03 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-21 11:18:03 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 11:18:03 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 11:23:22 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-21 11:23:22 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 11:23:22 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 11:23:27 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-21 11:23:27 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 11:23:27 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 11:23:38 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-21 11:23:38 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 11:23:38 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 11:23:50 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-21 11:23:50 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 11:23:50 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 11:24:04 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-21 11:24:04 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 11:24:04 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 11:24:09 - [31merror[39m - [31mNão existe usuário registrado no cache![39m
+2023-09-21 11:24:13 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-21 11:24:13 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 11:24:13 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 11:24:16 - [31merror[39m - [31mNão existe usuário registrado no cache![39m
+2023-09-21 11:25:15 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-21 11:25:15 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 11:25:15 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 11:26:05 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-21 11:26:05 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 11:26:05 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 11:26:11 - [31merror[39m - [31mNão existe usuário registrado no cache![39m
+2023-09-21 11:26:54 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-21 11:26:54 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 11:26:54 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 11:27:18 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-21 11:27:18 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 11:27:18 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 11:27:23 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-21 11:27:23 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 11:27:23 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 11:27:58 - [31merror[39m - [31mNão existe usuário registrado no cache![39m
+2023-09-21 11:28:01 - [31merror[39m - [31mNão existe usuário registrado no cache![39m
+2023-09-21 11:29:02 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-21 11:29:02 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 11:29:02 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 11:29:04 - [31merror[39m - [31mNão existe usuário registrado no cache![39m
+2023-09-21 11:29:49 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-21 11:29:49 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 11:29:49 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 11:30:21 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-21 11:30:21 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 11:30:21 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 11:30:29 - [31merror[39m - [31mNão existe usuário registrado no cache![39m
+2023-09-21 11:31:58 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-21 11:31:58 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 11:31:58 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 11:32:19 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-21 11:32:19 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 11:32:19 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 11:32:26 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-21 11:32:26 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 11:32:26 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 11:32:34 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-21 11:32:34 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 11:32:34 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 11:33:50 - [31merror[39m - [31mNão existe usuário registrado no cache![39m
+2023-09-21 11:34:06 - [32minfo[39m - [32mUsuário Atualizado com sucesso![39m
+2023-09-21 11:34:27 - [32minfo[39m - [32mRegistro inserido com sucesso. ID:[39m
+2023-09-21 11:34:44 - [32minfo[39m - [32mTarefa deletado com sucesso![39m
+2023-09-21 13:20:19 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-21 13:20:19 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 13:20:19 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 13:21:04 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-21 13:21:04 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 13:21:05 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 13:26:05 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-21 13:26:05 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 13:26:05 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 13:29:02 - [32minfo[39m - [32mRegistro inserido com sucesso. ID:[39m
+2023-09-21 13:32:08 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-21 13:32:08 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 13:32:08 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 13:33:16 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-21 13:33:16 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 13:33:16 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 13:38:56 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-21 13:38:56 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 13:38:56 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 13:40:39 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-21 13:40:39 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 13:40:39 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 13:40:54 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-21 13:40:54 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 13:40:54 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 13:43:02 - [32minfo[39m - [32mTarefa deletado com sucesso![39m
+2023-09-21 13:43:12 - [32minfo[39m - [32mRegistro inserido com sucesso. ID:[39m
+2023-09-21 13:43:26 - [32minfo[39m - [32mRegistro inserido com sucesso. ID:[39m
+2023-09-21 13:43:33 - [32minfo[39m - [32mRegistro inserido com sucesso. ID:[39m
+2023-09-21 13:44:02 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-21 13:44:02 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 13:44:02 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 13:44:36 - [32minfo[39m - [32mTarefa deletado com sucesso![39m
+2023-09-21 13:44:38 - [32minfo[39m - [32mTarefa deletado com sucesso![39m
+2023-09-21 13:44:41 - [32minfo[39m - [32mTarefa deletado com sucesso![39m
+2023-09-21 13:46:16 - [32minfo[39m - [32mUsuário Atualizado com sucesso![39m
+2023-09-21 13:46:33 - [32minfo[39m - [32mRegistro inserido com sucesso. ID:[39m
+2023-09-21 13:46:56 - [32minfo[39m - [32mTarefa deletado com sucesso![39m
+2023-09-21 13:47:04 - [32minfo[39m - [32mRegistro inserido com sucesso. ID:[39m
+2023-09-21 13:48:37 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-21 13:48:37 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 13:48:37 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 13:49:28 - [32minfo[39m - [32mRegistro inserido com sucesso. ID:[39m
+2023-09-21 13:50:18 - [32minfo[39m - [32mTarefa Atualizada com sucesso![39m
+2023-09-21 14:17:57 - [32minfo[39m - [32mUsuário Atualizado com sucesso![39m
+2023-09-21 14:18:05 - [32minfo[39m - [32mTarefa deletado com sucesso![39m
+2023-09-21 14:18:36 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-21 14:18:36 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 14:18:36 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 14:18:50 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-21 14:18:51 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 14:18:51 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 14:22:03 - [31merror[39m - [31mNão existe usuário registrado no cache![39m
+2023-09-21 14:22:58 - [32minfo[39m - [32mUsuário Atualizado com sucesso![39m
+2023-09-21 14:27:02 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-21 14:27:02 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 14:27:02 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 14:28:23 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-21 14:28:23 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 14:28:23 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 14:30:17 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-21 14:30:17 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 14:30:17 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 14:32:37 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-21 14:32:37 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 14:32:37 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 14:33:59 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-21 14:33:59 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 14:33:59 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 14:34:06 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-21 14:34:06 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 14:34:06 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 14:34:20 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-21 14:34:20 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 14:34:20 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 14:34:40 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-21 14:34:40 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 14:34:40 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 14:36:40 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-21 14:36:40 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 14:36:40 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 14:37:06 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-21 14:37:06 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 14:37:06 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 14:37:11 - [31merror[39m - [31mNão existe usuário registrado no cache![39m
+2023-09-21 14:37:55 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-21 14:37:55 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 14:37:55 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 14:40:03 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-21 14:40:03 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 14:40:03 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 14:41:11 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-21 14:41:11 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 14:41:11 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 14:42:19 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-21 14:42:19 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 14:42:19 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 14:43:06 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-21 14:43:06 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 14:43:06 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 14:43:23 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-21 14:43:23 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 14:43:23 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 14:44:15 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-21 14:44:15 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 14:44:15 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 14:44:56 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-21 14:44:56 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 14:44:56 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 14:45:21 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-21 14:45:21 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 14:45:21 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 14:46:41 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-21 14:46:41 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 14:46:41 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 15:41:09 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-21 15:41:09 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 15:41:09 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 15:43:17 - [32minfo[39m - [32mTarefa deletado com sucesso![39m
+2023-09-21 15:44:17 - [32minfo[39m - [32mRegistro inserido com sucesso. ID:[39m
+2023-09-21 15:46:33 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-21 15:46:33 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 15:46:33 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 15:47:46 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-21 15:47:46 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 15:47:46 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 15:48:07 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-21 15:48:07 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 15:48:07 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 15:49:05 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-21 15:49:05 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 15:49:05 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 15:50:25 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-21 15:50:25 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 15:50:25 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 15:50:52 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-21 15:50:52 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 15:50:52 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 15:51:38 - [31merror[39m - [31mNão existe usuário registrado no cache![39m
+2023-09-21 15:52:49 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-21 15:52:49 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 15:52:49 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 15:56:46 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-21 15:56:46 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 15:56:46 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 15:57:09 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-21 15:57:09 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 15:57:09 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 15:57:53 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-21 15:57:54 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 15:57:54 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 15:57:55 - [32minfo[39m - [32mRegistro inserido com sucesso. ID:[39m
+2023-09-21 15:58:12 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-21 15:58:12 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 15:58:12 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 15:59:42 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-21 15:59:42 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 15:59:42 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 15:59:55 - [31merror[39m - [31mNão existe usuário registrado no cache![39m
+2023-09-21 15:59:57 - [31merror[39m - [31mNão existe usuário registrado no cache![39m
+2023-09-21 16:00:11 - [32minfo[39m - [32mTarefa Atualizada com sucesso![39m
+2023-09-21 16:00:13 - [32minfo[39m - [32mTarefa Atualizada com sucesso![39m
+2023-09-21 16:00:13 - [32minfo[39m - [32mTarefa Atualizada com sucesso![39m
+2023-09-21 16:00:14 - [32minfo[39m - [32mTarefa Atualizada com sucesso![39m
+2023-09-21 16:08:53 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-21 16:08:53 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 16:08:53 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 16:08:54 - [31merror[39m - [31mNão existe usuário registrado no cache![39m
+2023-09-21 16:10:01 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-21 16:10:01 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 16:10:01 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 16:10:04 - [31merror[39m - [31mNão existe usuário registrado no cache![39m
+2023-09-21 16:10:29 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-21 16:10:29 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 16:10:29 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 16:10:29 - [31merror[39m - [31mNão existe usuário registrado no cache![39m
+2023-09-21 16:10:42 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-21 16:10:42 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 16:10:42 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 16:10:43 - [31merror[39m - [31mNão existe usuário registrado no cache![39m
+2023-09-21 16:11:10 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-21 16:11:10 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 16:11:10 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 16:11:11 - [31merror[39m - [31mNão existe usuário registrado no cache![39m
+2023-09-21 16:15:42 - [32minfo[39m - [32mTarefa Atualizada com sucesso![39m
+2023-09-21 16:15:43 - [32minfo[39m - [32mTarefa Atualizada com sucesso![39m
+2023-09-21 16:18:30 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-21 16:18:30 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 16:18:30 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 16:18:47 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-21 16:18:47 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 16:18:47 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 16:18:50 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-21 16:18:50 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 16:18:50 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 16:18:53 - [31merror[39m - [31mNão existe usuário registrado no cache![39m
+2023-09-21 16:19:24 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-21 16:19:24 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 16:19:24 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 16:19:26 - [31merror[39m - [31mNão existe usuário registrado no cache![39m
+2023-09-21 16:20:38 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-21 16:20:38 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 16:20:38 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 16:20:41 - [31merror[39m - [31mNão existe usuário registrado no cache![39m
+2023-09-21 16:21:52 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-21 16:21:52 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 16:21:52 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 16:21:59 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-21 16:21:59 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 16:21:59 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 16:22:00 - [31merror[39m - [31mNão existe usuário registrado no cache![39m
+2023-09-21 16:22:59 - [32minfo[39m - [32mTarefa deletado com sucesso![39m
+2023-09-21 16:23:27 - [32minfo[39m - [32mRegistro inserido com sucesso. ID:[39m
+2023-09-21 16:24:07 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-21 16:24:07 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 16:24:08 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 16:24:12 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-21 16:24:12 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 16:24:12 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 16:24:17 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-21 16:24:17 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 16:24:17 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 16:24:22 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-21 16:24:22 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 16:24:22 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 16:24:22 - [31merror[39m - [31mNão existe usuário registrado no cache![39m
+2023-09-21 16:25:55 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-21 16:25:55 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 16:25:55 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 16:25:56 - [31merror[39m - [31mNão existe usuário registrado no cache![39m
+2023-09-21 16:26:19 - [32minfo[39m - [32mTarefa Atualizada com sucesso![39m
+2023-09-21 16:26:21 - [32minfo[39m - [32mTarefa Atualizada com sucesso![39m
+2023-09-21 16:26:46 - [32minfo[39m - [32mRegistro inserido com sucesso. ID:[39m
+2023-09-21 16:27:02 - [32minfo[39m - [32mRegistro inserido com sucesso. ID:[39m
+2023-09-21 16:27:57 - [32minfo[39m - [32mRegistro inserido com sucesso. ID:[39m
+2023-09-21 16:28:10 - [32minfo[39m - [32mRegistro inserido com sucesso. ID:[39m
+2023-09-21 16:28:54 - [32minfo[39m - [32mRegistro inserido com sucesso. ID:[39m
+2023-09-21 16:28:59 - [32minfo[39m - [32mRegistro inserido com sucesso. ID:[39m
+2023-09-21 16:29:06 - [32minfo[39m - [32mTarefa deletado com sucesso![39m
+2023-09-21 16:29:14 - [32minfo[39m - [32mRegistro inserido com sucesso. ID:[39m
+2023-09-21 16:30:08 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-21 16:30:08 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 16:30:08 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 16:30:10 - [31merror[39m - [31mNão existe usuário registrado no cache![39m
+2023-09-21 18:00:24 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-21 18:00:24 - [31merror[39m - [31mErro ao se conectar com o banco, Error: connect ECONNREFUSED ::1:3306[39m
+2023-09-21 18:00:24 - [31merror[39m - [31mErro ao se conectar com o banco, Error: connect ECONNREFUSED ::1:3306[39m
+2023-09-21 18:00:48 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-21 18:00:48 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 18:00:48 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 18:01:29 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-21 18:01:29 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 18:01:29 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 18:02:05 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-21 18:02:05 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 18:02:05 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 18:02:07 - [31merror[39m - [31mNão existe usuário registrado no cache![39m
+2023-09-21 18:03:33 - [32minfo[39m - [32mRegistro inserido com sucesso. ID:[39m
+2023-09-21 18:07:55 - [32minfo[39m - [32mRegistro inserido com sucesso. ID:[39m
+2023-09-21 18:09:20 - [32minfo[39m - [32mUsuário Atualizado com sucesso![39m
+2023-09-21 18:09:29 - [32minfo[39m - [32mUsuário Atualizado com sucesso![39m
+2023-09-21 18:09:48 - [32minfo[39m - [32mUsuário deletado com sucesso![39m
+2023-09-21 18:10:59 - [32minfo[39m - [32mTarefa Atualizada com sucesso![39m
+2023-09-21 18:13:01 - [32minfo[39m - [32mRegistro inserido com sucesso. ID:[39m
+2023-09-21 18:13:48 - [32minfo[39m - [32mRegistro inserido com sucesso. ID:[39m
+2023-09-21 18:14:43 - [32minfo[39m - [32mRegistro inserido com sucesso. ID:[39m
+2023-09-21 18:15:02 - [32minfo[39m - [32mTarefa deletado com sucesso![39m
+2023-09-21 18:15:12 - [32minfo[39m - [32mTarefa deletado com sucesso![39m
+2023-09-21 18:15:37 - [32minfo[39m - [32mTarefa Atualizada com sucesso![39m
+2023-09-21 18:18:19 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-21 18:18:19 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 18:18:19 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 18:19:42 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-21 18:19:42 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 18:19:42 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 18:23:04 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-21 18:23:04 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 18:23:04 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 18:24:28 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-21 18:24:28 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 18:24:28 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 18:25:06 - [32minfo[39m - [32mRegistro inserido com sucesso. ID:[39m
+2023-09-21 18:25:38 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-21 18:25:38 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 18:25:38 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 18:35:41 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-21 18:35:41 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 18:35:41 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 18:53:54 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-21 18:53:54 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 18:53:54 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 18:59:09 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-21 18:59:09 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 18:59:09 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 18:59:19 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-21 18:59:19 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 18:59:19 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 18:59:35 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-21 18:59:35 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 18:59:35 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 19:02:47 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-21 19:02:47 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 19:02:47 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 19:03:00 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-21 19:03:00 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 19:03:00 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 19:03:06 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-21 19:03:06 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 19:03:06 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 19:04:34 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-21 19:04:34 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 19:04:34 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 19:04:50 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-21 19:04:50 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 19:04:50 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 19:05:17 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-21 19:05:17 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 19:05:17 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 19:06:04 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-21 19:06:04 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 19:06:04 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 19:06:46 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-21 19:06:46 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 19:06:46 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 19:10:08 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-21 19:10:09 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 19:10:09 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 19:12:17 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-21 19:12:17 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 19:12:17 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 19:12:20 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-21 19:12:20 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 19:12:20 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 19:21:07 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-21 19:21:07 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 19:21:07 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 19:21:42 - [32minfo[39m - [32mTarefa Atualizada com sucesso![39m
+2023-09-21 19:23:32 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-21 19:23:32 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 19:23:32 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 19:23:38 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-21 19:23:38 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 19:23:38 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 19:23:47 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-21 19:23:47 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 19:23:47 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 19:24:02 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-21 19:24:02 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 19:24:02 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 19:24:08 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-21 19:24:08 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 19:24:08 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 19:24:17 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-21 19:24:17 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 19:24:17 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 19:24:23 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-21 19:24:23 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 19:24:23 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 19:26:40 - [32minfo[39m - [32mUsuário Atualizado com sucesso![39m
+2023-09-21 19:26:53 - [32minfo[39m - [32mUsuário deletado com sucesso![39m
+2023-09-21 19:27:39 - [32minfo[39m - [32mTarefa Atualizada com sucesso![39m
+2023-09-21 19:27:44 - [32minfo[39m - [32mTarefa Atualizada com sucesso![39m
+2023-09-21 19:29:00 - [32minfo[39m - [32mServidor Aberto[39m
+2023-09-21 19:29:00 - [32minfo[39m - [32mConectado com sucesso ao banco[39m
+2023-09-21 19:29:00 - [32minfo[39m - [32mConectado com sucesso ao banco[39m

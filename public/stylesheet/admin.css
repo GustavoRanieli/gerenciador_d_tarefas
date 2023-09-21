@@ -7,6 +7,8 @@
 
 body{
     background-image: url(../image/background.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
     margin: 0;
     padding: 0;
     min-height: 100vh; /* Isso é importante para que o footer fique na parte inferior da página */
@@ -14,7 +16,7 @@ body{
 }
 
 .logo_painel_admin{
-    width: 100vw;
+    width: 96vw;
     margin-top: 20%;
 }
 
@@ -53,15 +55,16 @@ body{
 .section_user{
     background-color: rgb(252, 252, 252);
     margin-left: 6%;
-    margin-right: 6%;
+    margin-right: 4%;
 }
 
 
 .section_user_dados{
-    display: flex;
-    flex-direction: column;
-    height: 500px;
+    background-color: white;
+    max-height: 250px;
+    margin: 0 auto;
     overflow-y: scroll;
+    margin-bottom: 5%;
 }
 
 .user_container{
@@ -79,17 +82,15 @@ body{
 }
 
 
-#Nome_d_usuarios,
-#Svgs {
-    text-align: center;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 50% 50%;
+#Nome_d_usuarios{
+    margin-left: 2%;
+    
 }
 
 #Nome_d_usuarios a{
     font-size: 80%;
     font-family: 'Montserrat';
+    text-transform: uppercase;
     font-weight: 700;
     color: #000;
 }
@@ -101,7 +102,7 @@ body{
 }
 
 #Svgs img{
-    width: 80%;
+    width: 50%;
     height: auto;
 }
 

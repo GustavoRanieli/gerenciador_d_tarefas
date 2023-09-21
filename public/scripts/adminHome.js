@@ -1,5 +1,5 @@
-const url = "http://localhost:3000/consultarUser"
-const urlAllUsers = "http://localhost:3000/allUsers"
+const url = "http://192.168.15.25:3000/consultarUser"
+const urlAllUsers = "http://192.168.15.25:3000/allUsers"
 
 // Variaveis do HTML Users
 let opcao_d_consulta = document.querySelector("#Opcao_d_consulta");
@@ -60,7 +60,7 @@ function consultarBanco(whereUser, valorWhere){
                                 <a href="/tarefas/${element.id}"><p>${element.nome}</p></a>
                             </div>
                             <div class="section_user_Svgs"  id="Svgs">
-                                <a href="/editUser/${element.id}"><button>Editar</button></a>
+                                <a href="/editUser/${element.id}"><button><img src="../public/image/icons8-edit-48.png" alt="lápis"></button></a>
                                 <button id_delete="${element.id}"><img class="img_lixo" src="../public/image/icons8-trash-48.png" alt="lixo"></button>
                             </div>
                         </div>
@@ -96,11 +96,11 @@ async function consultarTodosUsers(){
                 container.innerHTML += `
                         <div class="user_container">
                             <div id="Nome_d_usuarios">
-                                <a href="/tarefas/${element.id}"><h1>${element.nome}</h1></a>
+                                <a href="/tarefas/${element.id}"><p>${element.nome}</p></a>
                             </div>
                             <div class="section_user_Svgs"  id="Svgs">
                                 <a href="/editUser/${element.id}"><button><img src="../public/image/icons8-edit-48.png" alt="lápis"></button></a>
-                                <button id_delete="${element.id}" nome_user="${element.nome}" id="bt_deleteAdmin"><img class="img_lixo" src="../public/image/icons8-trash-48.png" alt="lixo"></button>
+                                <button id_delete="${element.id}" nome_user="${element.nome}" id="bt_deleteAdmin"><img class="img_lixo" src="../public/image/icons8-trash-48.png" alt="lixo" width="10"></button>
                             </div>
                         </div>
                     `

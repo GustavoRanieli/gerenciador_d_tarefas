@@ -12,21 +12,18 @@
         <img class="logo_painel_admin" src="../public/image/Logo.png" alt="logo da empresa">
         <article>
             <div class="subtitulo_painel_admin">
-                <h2>TESTTT</h2>
+                <h2 id="TituloEdit"></h2>
             </div>
         </article>
 
-
+        <input type="text" value="<%= id_user %>" style="display: none;" id="value_id_user">
+        <input type="text" value="<%= id_taks %>" style="display: none;" id="value_id_task">
         <form action="/atualizarTarefa/<%= id_taks %>" method="post" enctype="application/x-www-form-urlencoded">
             <div class="container_editTask">
-                <div>
-                    <label>Nome da Tarefa:
-                        <input type="text" name="nome_tarefa" id="Input_nome" required>
-                    </label>
-                </div>
-                <div>
-                    <label>Dia:
-                        <select name="dia" id="Dia_da_semana" required>
+                <div class="form_NewTask">
+                    <div class="form-row">
+                        <label for="nome_tarefa" class="form-label">Selecione o dia da semana:</label>
+                        <select name="dia" id="Dia_da_semana" class="form-input">
                             <option value="Segunda">Segunda</option>
                             <option value="Terça">Terça</option>
                             <option value="Quarta">Quarta</option>
@@ -35,27 +32,32 @@
                             <option value="Sábado">Sábado</option>
                             <option value="Domingo">Domingo</option>
                         </select>
-                    </label>
+                    </div>
+                
+                    <div class="form-row">
+                        <label for="nome_tarefa" class="form-label">Nome da Tarefa</label>
+                        <input name="nome_tarefa" id="NomeEdit" type="text" class="form-input">
+                    </div>
+                
+                    <div class="form-row">
+                        <label for="descricao" class="form-label">Descrição da Tarefa</label>
+                        <textarea name="descricao" id="DescricaoInput" cols="30" rows="10" class="form-input"></textarea>
+                    </div>
+                
+                    <div class="form-row">
+                        <label for="condominio" class="form-label">Nome do condominio?</label>
+                        <input name="condominio" id="CondominioInput" type="text" class="form-input">
+                    </div>
+                
+                    <div class="form-row" style="display: none;">
+                        <label for="condominio" class="form-label">Tarefa concluida?</label>
+                        <input name="concluido" style="display: none;" type="text" class="form-input" value="0">
+                    </div>
                 </div>
-                <div class="descricao">
-                    <label>Descrição:</label>
-                        <textarea name="descricao" type="text" required></textarea>
-                </div>
-                <div style="display: none;">
-                    <label>Estado:
-                        <select name="concluido">
-                            <option value="0" selected>Não concluido</option>
-                        </select>
-                    </label>
-                </div>
-                <div>
-                    <label>Condomínio:
-                        <input name="condominio" type="text" required>
-                    </label>
-                </div>
-                <div class="container_bts">
-                    <a href="/tarefas/<%= id_user %>"><button type="button" class="voltar">Voltar</button></a>
-                    <button class="submit" type="submit">Enviar</button>
+                
+                <div class="form-row-button">
+                    <a href="/tarefas/<%= id_user %>"><button type="button" class="myButton">Voltar</button></a>
+                    <button class="myButton" type="submit" >Enviar</button>
                 </div>
             </div>
         </form>
@@ -65,5 +67,6 @@
             <p>Agillité Services 2023</p>
         </div>
     </footer>
+    <script src="../public/scripts/editTask.js" type="text/javascript" charset="UTF-8"></script>
 </body>
 </html>

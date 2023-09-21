@@ -1,10 +1,10 @@
 {/*  */}
 
 
-const urlId = "http://localhost:3000/userIdent";
+const urlId = "http://192.168.15.25:3000/userIdent";
 const container = document.querySelector('#Container');
 const dia_da_semana = document.querySelector('#Dia_da_semana');
-const urlEstado = 'http://localhost:3000/atualizarEstado'
+const urlEstado = 'http://192.168.15.25:3000/atualizarEstado'
 let idUser;
 let urlDia;
 let inputComplete;
@@ -26,7 +26,7 @@ async function consultarId(){
                 })
                 .then( data => {
                         idUser = data
-                        urlDia = `http://localhost:3000/consultarTarefaEspecifica/${idUser}`
+                        urlDia = `http://192.168.15.25:3000/consultarTarefaEspecifica/${idUser}`
                         consultarTasks(data);
                 })
                 .catch( err => {
@@ -48,7 +48,7 @@ async function consultarTasks(id){
                 body: ''
         }
 
-        await fetch(`http://localhost:3000/consultarTarefa/${id}`, fetchConfig)
+        await fetch(`http://192.168.15.25:3000/consultarTarefa/${id}`, fetchConfig)
                 .then( response => {
                         if( !response ){
                                 console.log("Não foi possível consultar o cache");
@@ -64,12 +64,12 @@ async function consultarTasks(id){
                                         <form action="/atualizarTarefaUser/${element.id_tarefa}" method="post" enctype="application/x-www-form-urlencoded"">
                                                 <div class="container_individualTask">
                                                         <div>
-                                                                <a href="/tarefaUser/${element.id_tarefa}"><h1>${element.nome_tarefa}</h1></a>
+                                                                <a href="/tarefaUser/${element.id_tarefa}"><p>${element.nome_tarefa}</p></a>
                                                                 <input type="text" name="nome_tarefa" value="${element.nome_tarefa}" style="display: none">
                                                         </div>
         
                                                         <div id="Dia">
-                                                                <h1>${element.dia_semana}</h1>
+                                                                <p>${element.dia_semana}</p>
                                                                 <input type="text"  value="${element.dia_semana}" name="dia" style="display: none">         
                                                         </div>
                                                         <div id="Cheked">
@@ -86,12 +86,12 @@ async function consultarTasks(id){
                                         <form action="/atualizarTarefaUser/${element.id_tarefa}" method="post" enctype="application/x-www-form-urlencoded"">
                                                 <div class="container_individualTask">
                                                         <div>
-                                                                <a href="/tarefaUser/${element.id_tarefa}"><h1>${element.nome_tarefa}</h1></a>
+                                                                <a href="/tarefaUser/${element.id_tarefa}"><p>${element.nome_tarefa}</p></a>
                                                                 <input type="text" name="nome_tarefa" value="${element.nome_tarefa}" style="display: none">
                                                         </div>
         
                                                         <div id="Dia">
-                                                                <h1>${element.dia_semana}</h1>
+                                                                <p>${element.dia_semana}</p>
                                                                 <input type="text"  value="${element.dia_semana}" name="dia" style="display: none">         
                                                         </div>
                                                         <div id="Cheked">
@@ -146,12 +146,12 @@ async function consultarTarefasPesquisa(id, dia_semana){
                                 <form action="/atualizarTarefaUser/${element.id_tarefa}" method="post" enctype="application/x-www-form-urlencoded"">
                                         <div class="container_individualTask">
                                                 <div>
-                                                        <a href="/tarefaUser/${element.id_tarefa}"><h1>${element.nome_tarefa}</h1></a>
+                                                        <a href="/tarefaUser/${element.id_tarefa}"><p>${element.nome_tarefa}</p></a>
                                                         <input type="text" name="nome_tarefa" value="${element.nome_tarefa}" style="display: none">
                                                 </div>
 
                                                 <div id="Dia">
-                                                        <h1>${element.dia_semana}</h1>
+                                                        <p>${element.dia_semana}</p>
                                                         <input type="text"  value="${element.dia_semana}" name="dia" style="display: none">         
                                                 </div>
                                                 <div id="Cheked">
@@ -168,12 +168,12 @@ async function consultarTarefasPesquisa(id, dia_semana){
                                 <form action="/atualizarTarefaUser/${element.id_tarefa}" method="post" enctype="application/x-www-form-urlencoded"">
                                         <div class="container_individualTask">
                                                 <div>
-                                                        <a href="/tarefaUser/${element.id_tarefa}"><h1>${element.nome_tarefa}</h1></a>
+                                                        <a href="/tarefaUser/${element.id_tarefa}"><p>${element.nome_tarefa}</p></a>
                                                         <input type="text" name="nome_tarefa" value="${element.nome_tarefa}" style="display: none">
                                                 </div>
 
                                                 <div id="Dia">
-                                                        <h1>${element.dia_semana}</h1>
+                                                        <p>${element.dia_semana}</p>
                                                         <input type="text"  value="${element.dia_semana}" name="dia" style="display: none">         
                                                 </div>
                                                 <div id="Cheked">

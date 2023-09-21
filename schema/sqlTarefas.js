@@ -65,8 +65,10 @@ const tarefasController = {
               logger.error('Erro ao executar a consulta SQL:', err);
               return;
             }
-            res.json(results)
             console.log('Consulta feita com sucesso Tarefas!');
+            console.log(results);
+
+            res.json(results)
           });
       // Implementação para consultar tarefas...
     },
@@ -102,8 +104,9 @@ const tarefasController = {
               logger.error('Erro ao inserir registro no banco de dados:', err);
               res.status(500).send('Erro')
             }else{
+              let id = cache.get('id_user_para_consultar_tarefas')
               logger.info('Registro inserido com sucesso. ID:', result);
-              res.status(200).render('admin')
+              res.status(200).redirect(`/tarefas/${id}`)
             }
         });
       // Implementação para adicionar tarefas...

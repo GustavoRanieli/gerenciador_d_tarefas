@@ -1,4 +1,4 @@
-const urlAllUsers = "http://localhost:3000/allUsers";
+const urlAllUsers = "http://192.168.15.25:3000/allUsers";
 
 
 const Id_users = document.querySelector('#Id_users')
