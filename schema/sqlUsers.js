@@ -59,7 +59,11 @@ const sqlControlerUser = {
                   }
                 });
             }else{
-              return res.status(401)
+              let nome = usuario.nome;
+              let senha = usuario.senha;
+              let idade = usuario.idade;
+              let verify = 1;
+              return res.status(401).render('newUser', { verify, nome, senha, idade })
             }
           }
         })
@@ -167,7 +171,8 @@ const sqlControlerUser = {
           }
 
           if (result.length === 0) {
-            return res.status(401).send('Credenciais inválidas');
+            let verify = 1
+            return res.status(401).render('login', { verify });
           }
 
           const usuario = result[0];
@@ -190,7 +195,7 @@ const sqlControlerUser = {
 
     quebrarLogin: function( req, res ){
       cache.del('id_user');
-      res.render('login');
+      res.redirect('/');
     },
 
     renderizarAdmin: function( req, res ){

@@ -11,6 +11,8 @@
 <body>
     <header></header>
 
+    <input type="text" style="display: none;" value="<%= verify %>" id="Verify">
+
     <img class="logo_painel_admin" src="../public/image/Logo.png" alt="logo da empresa">
 
     <article>
@@ -23,12 +25,12 @@
             <div class="form_NewUser">
                 <div class="form-row">
                     <label for="nome" class="form-label">Usuário</label>
-                    <input name="nome" type="text" id="nome" class="form-input" required>
+                    <input name="nome" type="text" id="nome" class="form-input" value="<%= nome %>" required>
                 </div>
 
                 <div class="form-row">
                     <label for="senha" class="form-label">Senha</label>
-                    <input name="senha" type="text" id="senha" class="form-input" required>
+                    <input name="senha" type="text" id="senha" value="<%= senha %>" class="form-input" required>
                 </div>
 
                 <div class="form-row">
@@ -46,13 +48,13 @@
 
                 <div class="form-row">
                     <label for="idade" class="form-label">Idade</label>
-                    <input name="idade" type="text" id="idade" class="form-input" required>
+                    <input name="idade" type="text" value="<%= idade %>" id="idade" class="form-input" required>
                 </div>
             </div>
 
             <div class="form-row-button">
                 <button type="submit" class="myButton">Criar</button>
-                <a href="/administrate" class="myButton">Voltar</a>
+                <a href="/administrate"><button class="myButton">Voltar</button></a>
             </div>
            
 
@@ -60,11 +62,38 @@
 
         <footer>
             <div>
-                <p>Agillité Services 2023</p>
+                <p>Agillité Service 2023</p>
             </div>
         </footer>
 
     </main>
 </body>
+    <script>
+        // Bloqueia a ação de impressão quando a página é carregada
+        window.addEventListener("beforeprint", function (e) {
+        e.preventDefault();
+        alert("A impressão está desativada para esta página.");
+        });
 
+        // Bloqueia a ação de impressão quando o usuário pressiona Ctrl + P ou Cmd + P (atalho de impressão)
+        window.addEventListener("keydown", function (e) {
+        if ((e.ctrlKey || e.metaKey) && e.keyCode === 80) {
+            e.preventDefault();
+            alert("A impressão está desativada para esta página.");
+        }
+        });
+
+        window.addEventListener('contextmenu', function (e) {
+            e.preventDefault();
+        });
+    </script>
+    <script>
+        let verify = document.querySelector('#Verify').value
+
+        if(verify == 0){
+            console.log('Ok até aqui!')
+        }else{
+            alert('CPF Já cadastrado!')
+        }
+    </script>
 </html> 

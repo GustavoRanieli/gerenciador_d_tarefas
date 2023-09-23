@@ -32,11 +32,16 @@ app.use('/public', express.static('public'));
 
 //Rotas
 app.get('/', ( req, res ) => {
-    res.render('login')
+    let verify = 0
+    res.render('login', { verify })
 })
 
 app.get('/novoUsuario', ( req, res) =>{
-    res.render('newUser')
+    let nome = ""
+    let senha = ""
+    let idade = ""
+    let verify = 0
+    res.render('newUser', { verify, nome, senha, idade })
 })
 
 app.get('/novaTaks', ( req, res ) => {

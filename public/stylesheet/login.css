@@ -1,9 +1,25 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:300);
+body {
+    background-image: url(../image/background.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    /* Isso é importante para que o footer fique na parte inferior da página */
+    position: relative;
+    /* Define a posição relativa para o body */
+}
 
 .login-page {
     width: 360px;
     padding: 8% 0 0;
     margin: auto;
+}
+
+.logo_painel_admin {
+    width: 96vw;
+    margin-top: 20%;
 }
 
 .form {

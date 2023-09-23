@@ -46,10 +46,28 @@
     </main>
     <footer>
         <div>
-            <p>Agillité Services 2023</p>
+            <p>Agillité Service 2023</p>
         </div>
     </footer>
+    <script>
+        // Bloqueia a ação de impressão quando a página é carregada
+        window.addEventListener("beforeprint", function (e) {
+        e.preventDefault();
+        alert("A impressão está desativada para esta página.");
+        });
 
+        // Bloqueia a ação de impressão quando o usuário pressiona Ctrl + P ou Cmd + P (atalho de impressão)
+        window.addEventListener("keydown", function (e) {
+        if ((e.ctrlKey || e.metaKey) && e.keyCode === 80) {
+            e.preventDefault();
+            alert("A impressão está desativada para esta página.");
+        }
+        });
+
+        window.addEventListener('contextmenu', function (e) {
+            e.preventDefault();
+        });
+    </script>
     <script src="../public/scripts/userHome.js" type="text/javascript"></script>
 </body>
 </html>
