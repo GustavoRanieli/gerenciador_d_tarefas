@@ -28,6 +28,7 @@ connection.connect(( err ) => {
 // Funções
 let sqlSelect = `SELECT * FROM usuario WHERE `;
 let sqlAllSelect = `SELECT * FROM usuario WHERE id <> ?`;
+const sqlDeleteTarefa = 'DELETE FROM tarefas WHERE id_usuario = ?';
 const sqlInsert = 'INSERT INTO usuario (id, nome, senha, funcao, cpf, idade) VALUES (?, ?, ?, ?, ?, ?)';
 const sqlUpdate = 'UPDATE usuario SET nome = ?, senha = ?, funcao = ?, cpf = ?, idade = ? WHERE ID = (?)';
 const sqlDelete = 'DELETE FROM usuario WHERE ID = (?)';
@@ -133,7 +134,8 @@ const sqlControlerUser = {
 
     deleteUsuario: function( req, res ) {
       let id = req.params.id
-      connection.query(sqlDelete, [id], ( err, results ) => {
+      connection.query(sqlDeleteTarefa, [id], ( err, results ) => {
+        connection.query(sqlDelete, [id], ( err, results ) => {
           if( err ){
             logger.error('Erro ao deletar usuário!');
             res.status(500).send('Erro ao deletar!')
@@ -142,6 +144,8 @@ const sqlControlerUser = {
             res.status(200).render('admin')
           }
       })
+      })
+      
       // Implementação para Deletar...
     },
 

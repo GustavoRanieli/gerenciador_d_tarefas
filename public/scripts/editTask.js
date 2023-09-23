@@ -1,4 +1,4 @@
-const url = `http://192.168.15.25:3000/consultarTarefa/`;
+const url = `http://localhost:3000/consultarTarefa/`;
 const idUser = document.querySelector('#value_id_user').value;
 const idTask= document.querySelector('#value_id_task').value;
 

@@ -1,5 +1,5 @@
-const url = "http://192.168.15.25:3000/consultarUser"
-const urlAllUsers = "http://192.168.15.25:3000/allUsers"
+const url = "http://localhost:3000/consultarUser"
+const urlAllUsers = "http://localhost:3000/allUsers"
 
 // Variaveis do HTML Users
 let opcao_d_consulta = document.querySelector("#Opcao_d_consulta");

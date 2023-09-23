@@ -5,7 +5,7 @@ const funcaoEdit = document.querySelector('#FuncaoEdit')
 const cpfEdit = document.querySelector('#CpfEdit')
 const btSubmit = document.querySelector('#BtSubmit')
 const idadeEdit = document.querySelector('#IdadeEdit')
-const url = `http://192.168.15.25:3000/consultarUser`
+const url = `http://localhost:3000/consultarUser`
 
 document.addEventListener('DOMContentLoaded', () => {
     const fetchBody = new URLSearchParams

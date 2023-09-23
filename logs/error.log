@@ -133,3 +133,5 @@
 2023-09-21 18:00:24 - [31merror[39m - [31mErro ao se conectar com o banco, Error: connect ECONNREFUSED ::1:3306[39m
 2023-09-21 18:00:24 - [31merror[39m - [31mErro ao se conectar com o banco, Error: connect ECONNREFUSED ::1:3306[39m
 2023-09-21 18:02:07 - [31merror[39m - [31mNão existe usuário registrado no cache![39m
+2023-09-22 20:54:05 - [31merror[39m - [31mErro ao se conectar com o banco, Error: connect ECONNREFUSED ::1:3306[39m
+2023-09-22 20:54:05 - [31merror[39m - [31mErro ao se conectar com o banco, Error: connect ECONNREFUSED ::1:3306[39m

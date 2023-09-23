@@ -5,7 +5,7 @@ let Bt_delet;
 
 // Puxando o id do usuário para consulta
 document.addEventListener('DOMContentLoaded', async () => {
-   await fetch('http://192.168.15.25:3000/userTaksIdent')
+   await fetch('http://localhost:3000/userTaksIdent')
         .then(response => {
             if(!response){
                 console.log('Falha ao puxar Id, Id vazio')
@@ -14,8 +14,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         })
         .then(data => {
             idUser = data;
-            url = `http://192.168.15.25:3000/consultarTarefa/${idUser}`
-            urlDia = `http://192.168.15.25:3000/consultarTarefaEspecifica/${idUser}`
+            url = `http://localhost:3000/consultarTarefa/${idUser}`
+            urlDia = `http://localhost:3000/consultarTarefaEspecifica/${idUser}`
             consultarTarefas()
         })
         .catch(err => {
